@@ -38,4 +38,8 @@ h1, h2 {
     text-align: center;
 }
 
+.container p {
+    text-align: justify;
+}
+
 
