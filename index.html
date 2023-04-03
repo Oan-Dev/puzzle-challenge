@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,45 @@
     <title>YoanDev | Casse-Tête Algorithmique</title>
 </head>
 <body>
-    <h1></h1>
-    
+    <h1>challenge pour résoudre le casse-tête de YoanDev</h1>
+    <main>
+        <div class="container">
+            <h2>le casse-tête</h2>
+            <div class="statement">
+                <p class="contxt">Vous devez écrire un script (dans le language de votre choix) pour résoudre l'énigme suivante. Lorsque vous aurez trouvé la bonne réponse, vous obtiendrez un lien vers la page de la formation avec la réduction appliquée.
+                </p>
+                
+                <p class="contxt">
+                Vous devez écrire un algorithme qui transforme cette chaîne d'entrée XgP5a98FT45sft en une chaîne de caractères de sortie qui respecte les règles suivantes :
+                </p>
+                
+                <ol class="list">
+                    <li class="step">
+                        Parcourir la chaîne de caractères et, pour chaque caractère, déterminer s'il s'agit d'une lettre ou d'un chiffre.
+                    </li>
+                    <li class="step">
+                        Si c'est une lettre, convertir les lettres minuscules en majuscules. Si c'est une lettre majuscule, déterminer sa position dans l'alphabet (A=1, B=2, ..., Z=26) et ne conserver que les unités (par exemple, si la lettre est 'Z', elle devient '6' car 26 % 10 = 6).
+                    </li>
+                    <li class="step">
+                        Si c'est un chiffre, ajouter 3 au chiffre (modulo 10), c'est-à-dire que si le chiffre est 8, il devient 1 (8+3 = 11, 11 % 10 = 1).
+                    </li>
+                    <li class="step">
+                        À la fin de la chaîne modifiée, ajouter le nombre total de lettres et de chiffres présents dans la chaîne d'entrée, sous forme de deux chiffres. Par exemple, si la chaîne d'entrée a 15 caractères, ajoutez "15" à la fin.
+                    </li>
+                    <li class="step">
+                        Ajouter la chaîne de caractères https://formation.yoandev.co/?coupon= au début du code promo pour former le lien complet vers la page de la formation avec la réduction appliquée.
+                    </li>
+                </ol>
+                <p class="expected-result">
+                    Votre script doit retourner un lien vers la page de la formation avec la réduction appliquée. 
+                </p>
+            </div>
+            <div class="result">
+                <table></table>
+
+            </div>
+        </div>
+    </main>
 
     <script src="assets/js/apps.js"></script>
 </body>
