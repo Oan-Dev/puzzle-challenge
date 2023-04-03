@@ -7,6 +7,7 @@
 :root {
     --primary-txt: #f8f8f8;
     --primary-bg: #333;
+    --secondary-bg: #000;
     --danger-bg: rgba(245, 57, 57);
     --success-bg: rgba(27, 221, 27, 0.842); 
     
@@ -22,16 +23,26 @@ a {
 }
 
 body {
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     color: var(--primary-txt);
 }
+.container {
+    min-height: 100vh;
+}
 
-.container, .statement, ol {
+.statement, .result {
+    background-color: var(--primary-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container, .statement, .result, ol {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 90%;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 h1, h2 {
@@ -40,6 +51,10 @@ h1, h2 {
 
 .container p {
     text-align: justify;
+}
+.result {
+    min-height: 50vh;
+    /* background-color: darkgreen; */
 }
 
 
