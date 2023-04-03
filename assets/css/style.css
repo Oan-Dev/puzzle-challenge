@@ -1,0 +1,41 @@
+/* GLOBAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-txt: #f8f8f8;
+    --primary-bg: #333;
+    --danger-bg: rgba(245, 57, 57);
+    --success-bg: rgba(27, 221, 27, 0.842); 
+    
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-txt);
+}
+
+.container, .statement, ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
