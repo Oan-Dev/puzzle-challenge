@@ -7,7 +7,8 @@
 :root {
     --primary-txt: #f8f8f8;
     --primary-bg: #333;
-    --secondary-bg: #000;
+    --secondary-bg: #1f18188e;
+    --third-bg: #000;
     --danger-bg: rgba(245, 57, 57);
     --success-bg: rgba(27, 221, 27, 0.842); 
     
@@ -24,6 +25,7 @@ a {
 
 body {
     background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
     color: var(--primary-txt);
 }
 .container {
@@ -31,8 +33,9 @@ body {
 }
 
 .statement, .result {
-    background-color: var(--primary-bg);
-    padding: 20px;
+    /* background-color: var(--primary-bg); */
+    background-color: var(--secondary-bg);
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -49,11 +52,11 @@ h1, h2 {
     text-align: center;
 }
 
-.container p {
+.container p, ol li {
     text-align: justify;
 }
 .result {
-    min-height: 50vh;
+    min-height: 80vh;
     /* background-color: darkgreen; */
 }
 
