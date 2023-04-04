@@ -1,7 +1,7 @@
 // retrive the datas from the DOM
 
-const data = document.getElementById('statementData').value;
+const data = document.getElementById("statementData").innerHTML;
 console.log(data);
 
-// const tableData = [... data];
-// console.log(tableData);
+const tableData = [... data];
+console.log(tableData);
