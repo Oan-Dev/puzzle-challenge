@@ -9,7 +9,13 @@ console.log(tableData);
 
 tableData.forEach( element => console.log(element, typeof element));
 
-// tableValue = tableData.
+tableValue = tableData.forEach( element = function (element) {
+    element.parseInt([...element])
+    if( element != parseInt(element)) {
+        console.log(element, typeof element); 
+    }
+
+})
 
 
 
