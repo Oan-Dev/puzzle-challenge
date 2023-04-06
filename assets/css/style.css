@@ -52,7 +52,7 @@ h1, h2 {
     text-align: center;
 }
 
-.container p, ol li {
+.container p{
     text-align: justify;
 }
 .result {
