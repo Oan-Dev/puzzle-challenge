@@ -7,16 +7,19 @@ console.log(data);
 const tableData = [... data];
 console.log(tableData);
 
-tableData.forEach( element => console.log(element));
+tableData.forEach( element => console.log(element, typeof element));
+
+// tableValue = tableData.
 
 
-const str = tableData.forEach(element => function(value) {
-    if (value !== number) {
-        return value;
-    }
-});
 
-console.log(str);
+// const str = tableData.forEach(element => function(value) {
+//     if (value != number) {
+//         return value;
+//     }
+// });
+
+// console.log(str);
 
 // const sortingData = tableData.sort();
 
