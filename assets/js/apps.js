@@ -11,14 +11,16 @@ console.log(dataTable);
 dataTable.forEach( element => console.log(element, typeof element));
 
 // retrieve only numbers converted from string to number type
-const numberValueTable = dataTable.map(element => Number(element));
+const numberValueTable = dataTable.map(element => Number(element)).filter(Number);
 console.log(numberValueTable);
 
-// retrieve only letters without numbers (issue)
+// retrieve only letters without numbers
 const letterValueTable = dataTable.map( (element) => {
+
+
     if(element !== numberValueTable) {
         return element
     }
-} )
+} ).filter((element) => { element !== numberValueTable})
 console.log(letterValueTable);
 
