@@ -3,47 +3,20 @@
 const data = document.getElementById("statementData").innerHTML.toUpperCase();
 console.log(data);
 
+// Deep copy in new array
+const dataTable = [... data];
+console.log(dataTable);
 
-const tableData = [... data];
-console.log(tableData);
+// retrieve all elements and its types
+dataTable.forEach( element => console.log(element, typeof element));
 
-tableData.forEach( element => console.log(element, typeof element));
+// retrieve only numbers converted from string to number type
+const numberValueTable = dataTable.map(element => Number(element));
 
-// const isNumberType = tableData.every( (element) => {
-//     return element  === typeof(Number);
-// });
+console.log(numberValueTable);
 
-// console.log(isNumberType);
+// retrieve only letters without numbers
+const letterValueTable = dataTable.map(element => !Number(element))
 
-// const tableValue = tableData.forEach( (element) => {
-//     if(typeof(element.valueOf(element)) == typeof(Number)) {
-//         return Number;
-//     }
-// });
-
-const tableValue = tableData.map(element => Number(element));
-
-console.log(tableValue);
-
-// tableValue = tableData.forEach( element = function (element) {
-//     element.number([...element])
-//     if( element != number(element)) {
-//         console.log(element, typeof element); 
-//     }
-
-// })
-
-
-
-// const str = tableData.forEach(element => function(value) {
-//     if (value != number) {
-//         return value;
-//     }
-// });
-
-// console.log(str);
-
-// const sortingData = tableData.sort();
-
-// console.log(sortingData);
+console.log(letterValueTable);
 
