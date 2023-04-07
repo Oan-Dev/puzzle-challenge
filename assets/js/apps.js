@@ -15,6 +15,6 @@ const numberValueTable = dataTable.map(element => Number(element)).filter(Number
 console.log(numberValueTable);
 
 // retrieve only letters without numbers
-const letterValueTable = dataTable.filter((element) => { return element != numberValueTable})
+const letterValueTable = dataTable.map((element) => { return element != numberValueTable})
 console.log(letterValueTable);
 
