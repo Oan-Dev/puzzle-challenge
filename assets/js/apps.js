@@ -15,11 +15,13 @@ tableData.forEach( element => console.log(element, typeof element));
 
 // console.log(isNumberType);
 
-const tableValue = tableData.forEach( (element) => {
-    if(typeof(element.valueOf(element)) == typeof(Number)) {
-        return Number;
-    }
-});
+// const tableValue = tableData.forEach( (element) => {
+//     if(typeof(element.valueOf(element)) == typeof(Number)) {
+//         return Number;
+//     }
+// });
+
+const tableValue = tableData.map(element => Number(element));
 
 console.log(tableValue);
 
