@@ -9,13 +9,21 @@ console.log(tableData);
 
 tableData.forEach( element => console.log(element, typeof element));
 
-tableValue = tableData.forEach( element = function (element) {
-    element.parseInt([...element])
-    if( element != parseInt(element)) {
-        console.log(element, typeof element); 
-    }
+const isNumberType = tableData.every( (element) => {
+    return element  === typeof(Number);
+});
 
-})
+console.log(isNumberType);
+
+const tableValue = tableData
+
+// tableValue = tableData.forEach( element = function (element) {
+//     element.number([...element])
+//     if( element != number(element)) {
+//         console.log(element, typeof element); 
+//     }
+
+// })
 
 
 
