@@ -15,16 +15,7 @@ const numberValueTable = dataTable.map(element => Number(element)).filter(Number
 console.log(numberValueTable, typeof(numberValueTable.values));
 
 // adding number regex for checking number in number type ?
-const reg = new RegExp('^[0-9]+$');
 
-
-// function for checking if array element is a number and return boolean
-const isNumber = function isNumber(n){
-    return Number(n)=== n;
-}
-
-// console.log("is Number's array elements of numberValueTable : ",isNumber(numberValueTable))
-// console.log("is Number's array elements of dataTable : ",isNumber(dataTable))
 
 numberValueTable.forEach( element => console.log(element, typeof element));
 
@@ -39,25 +30,34 @@ TEST for converting number typed from string to number type and
 
 //Separating Number and String
 
-
+// creating 
 const stringArray = [];
 const numberArray = [];
 
-const typedArray = parseInt([...dataTable])
+for (i = 0; i < 10; i++) {
+    numberArray.push(i)
+}
+
+for (i = 0; i < 10; i++) {
+    const numStr = numberArray[i].toString();
+    numberArray.push(numStr)
+}
+console.log('_____');
+
+numberArray.forEach( element => console.log(element, typeof element));
+
+
+
+
+// const typedArray = parseInt([...dataTable])
 
 // typedArray.map(((element) => typeof element === 'string'))
 
 // console.log(typedArray);
 
 
-const numArr = dataTable.filter(Number).toString()
-console.log(numArr);
-for (i = 0; i < dataTable.length ; i++) {
-    if (dataTable !== match(reg)) {
-        stringArray.push()
-    }
-}
-console.log(stringArray);
+// const numArr = dataTable.filter(Number).toString()
+// console.log(numArr);
 
 // const newArray = function filterArray(){
 //     return dataTable.filter((element) => typeof element === 'string')
