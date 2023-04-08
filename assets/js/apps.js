@@ -15,8 +15,6 @@ const numberValueTable = dataTable.map(element => Number(element)).filter(Number
 console.log(numberValueTable, typeof(numberValueTable.values));
 
 // adding number regex for checking number in number type ?
-
-
 numberValueTable.forEach( element => console.log(element, typeof element));
 
 
@@ -30,8 +28,13 @@ TEST for converting number typed from string to number type and
 
 //Separating Number and String
 
-// creating 
-const stringArray = [];
+/**
+creating a new array with number typed string for comparing between 2 arrays
+and return only real string
+
+*/
+
+// const stringArray = [];
 const numberArray = [];
 
 for (i = 0; i < 10; i++) {
@@ -46,70 +49,11 @@ console.log('_____');
 
 numberArray.forEach( element => console.log(element, typeof element));
 
+/** 
+Comparing 2 arrays
+*/
 
+const stringArray = dataTable.filter(x => !numberArray.includes(x));
 
-
-// const typedArray = parseInt([...dataTable])
-
-// typedArray.map(((element) => typeof element === 'string'))
-
-// console.log(typedArray);
-
-
-// const numArr = dataTable.filter(Number).toString()
-// console.log(numArr);
-
-// const newArray = function filterArray(){
-//     return dataTable.filter((element) => typeof element === 'string')
-// }
-
-// console.log(newArray);
-
-// console.log(parseInt(dataTable));
-
-// dataTable.forEach(element => {
-//     if(typeof(element !== typeof(parseInt(dataTable)))) {
-//         stringArray.push(element);
-//     }
-//     if(typeof(element === typeof(parseInt(dataTable)))) {
-//         numberArray.push(element);
-//     }
-// });
-
-// console.log(stringArray);
-// console.log(numberArray);
-
-// console.log(reg.test(stringArray));
-// console.log(reg.test(numberValueTable));
-
-
-// retrieve only letters without numbers
-
-// const stringLetter = stringArray.filter()
-
-
-
-
-// stringArray.forEach(item => (item) => {
-//     const stringLetter =  stringArray.map((item.typeof(String) !== numberValueTable));
-//     return console.log(stringLetter);
-
-// } );
-
-
-// console.log(stringArray);
-
-
-
-// const letterValueTable = dataTable.map((element) => { 
-
-//     if(element != numberValueTable) {
-        
-//         element.slice(element => {
-//             return element
-//         })
-//         return 
-//     }
-// })
-// console.log(letterValueTable);
+console.log(stringArray);
 
