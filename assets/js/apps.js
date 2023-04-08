@@ -28,9 +28,26 @@ console.log("is Number's array elements of dataTable : ",isNumber(dataTable))
 
 numberValueTable.forEach( element => console.log(element, typeof element));
 
-//deep copy from datatable for terminating number
-// const stringArray = [...dataTable].filter(element => element !== isNumber(numberValueTable));
-// console.log(stringArray, typeof element);
+// Separating Number and String
+const stringArray = [];
+const numberArray = [];
+
+// console.log(parseInt(dataTable));
+
+dataTable.forEach(element => {
+
+  
+
+    if(typeof(element !== typeof(parseInt(dataTable)))) {
+        stringArray.push(element);
+    }
+    if(typeof(element === typeof(parseInt(dataTable)))) {
+        numberArray.push(element);
+    }
+});
+
+console.log(stringArray);
+console.log(numberArray);
 
 // console.log(reg.test(stringArray));
 // console.log(reg.test(numberValueTable));
