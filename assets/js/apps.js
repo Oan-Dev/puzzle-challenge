@@ -12,7 +12,7 @@ dataTable.forEach( element => console.log(element, typeof element));
 
 // retrieve only numbers converted from string to number type
 const numberValueTable = dataTable.map(element => Number(element)).filter(Number);
-console.log(numberValueTable, typeof numberValueTable);
+console.log(numberValueTable, typeof(numberValueTable.values));
 
 // adding number regex for checking number in number type ?
 const reg = new RegExp('^[0-9]+$');
@@ -23,8 +23,10 @@ const isNumber = function isNumber(n){
     return Number(n)=== n;
 }
 
-console.log(isNumber(numberValueTable))
+console.log("is Number's array elements of numberValueTable : ",isNumber(numberValueTable))
+console.log("is Number's array elements of dataTable : ",isNumber(dataTable))
 
+numberValueTable.forEach( element => console.log(element, typeof element));
 
 //deep copy from datatable for terminating number
 // const stringArray = [...dataTable].filter(element => element !== isNumber(numberValueTable));
