@@ -23,8 +23,8 @@ const isNumber = function isNumber(n){
     return Number(n)=== n;
 }
 
-console.log("is Number's array elements of numberValueTable : ",isNumber(numberValueTable))
-console.log("is Number's array elements of dataTable : ",isNumber(dataTable))
+// console.log("is Number's array elements of numberValueTable : ",isNumber(numberValueTable))
+// console.log("is Number's array elements of dataTable : ",isNumber(dataTable))
 
 numberValueTable.forEach( element => console.log(element, typeof element));
 
@@ -38,6 +38,8 @@ TEST for converting number typed from string to number type and
 */  
 
 //Separating Number and String
+
+
 const stringArray = [];
 const numberArray = [];
 
@@ -45,14 +47,23 @@ const typedArray = parseInt([...dataTable])
 
 // typedArray.map(((element) => typeof element === 'string'))
 
-console.log(typedArray);
+// console.log(typedArray);
 
 
-const newArray = function filterArray(){
-    return dataTable.filter((element) => typeof element === 'string')
+const numArr = dataTable.filter(Number).toString()
+console.log(numArr);
+for (i = 0; i < dataTable.length ; i++) {
+    if (dataTable !== match(reg)) {
+        stringArray.push()
+    }
 }
+console.log(stringArray);
 
-console.log(newArray);
+// const newArray = function filterArray(){
+//     return dataTable.filter((element) => typeof element === 'string')
+// }
+
+// console.log(newArray);
 
 // console.log(parseInt(dataTable));
 
