@@ -98,3 +98,9 @@ storage only the unities of this alphabet position
 //     return (alphaPosition ? '$2.00' : '$10.00');
 
 // }
+
+// console.log(24 % 10);
+
+// const positionUnity = alphaPosition.forEach(element => console.log(element % 10));
+
+
