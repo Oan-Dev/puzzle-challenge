@@ -101,8 +101,10 @@ storage only the unities of this alphabet position
 
 // console.log(24 % 10);
 
+const positionUnity2 = [Number(alphaPosition) % 10]
+
 const positionUnity = () => alphaPosition.forEach(element => (element > 9 ? element % 10 : element));
 
 
-console.log(positionUnity());
+console.log(positionUnity(alphaPosition));
 
