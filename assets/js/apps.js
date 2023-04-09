@@ -50,10 +50,11 @@ console.log('_____');
 numberArray.forEach( element => console.log(element, typeof element));
 
 /** 
-Comparing 2 arrays
+Comparing 2 arrays and return only strings => the letters 
+    then its sorted for determining the position for each letter in alphabet
 */
 
-const stringArray = dataTable.filter(x => !numberArray.includes(x));
+const stringArray = dataTable.filter(x => !numberArray.includes(x)).sort();
 
 console.log(stringArray);
 
