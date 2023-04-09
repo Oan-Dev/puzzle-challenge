@@ -58,3 +58,28 @@ const stringArray = dataTable.filter(x => !numberArray.includes(x)).sort();
 
 console.log(stringArray);
 
+/**  
+
+Searching position of array values in alphabet position
+
+*/
+
+
+/** function for searching in ASCII Table */
+
+// function positionInAlphabet(stringArray) {
+//     const DIFFERENCE_CHARCODE_AND_LETTERS = 64;
+  
+//     // Import stringArray in function by deep copy
+//     const myArray = [...stringArray];
+  
+//     // Find the position of the char in the alphabet
+//     const position = myArray - DIFFERENCE_CHARCODE_AND_LETTERS;
+  
+//     // Return the desired message with the position
+//     return `Position in Alphabet: ${position}` 
+
+// }
+// const scoreAlphabet = positionInAlphabet();
+
+// console.log(scoreAlphabet);
