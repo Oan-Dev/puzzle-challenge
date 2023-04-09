@@ -64,22 +64,15 @@ Searching position of array values in alphabet position
 
 */
 
+// replacing the string array by it position in alphabet
+var alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split('');
+var alphabetPosition = text => 
+  stringArray.map(x => alphabet.indexOf(x) + 1);
+console.log(alphabetPosition(stringArray));
 
-/** function for searching in ASCII Table */
+/** 
 
-// function positionInAlphabet(stringArray) {
-//     const DIFFERENCE_CHARCODE_AND_LETTERS = 64;
-  
-//     // Import stringArray in function by deep copy
-//     const myArray = [...stringArray];
-  
-//     // Find the position of the char in the alphabet
-//     const position = myArray - DIFFERENCE_CHARCODE_AND_LETTERS;
-  
-//     // Return the desired message with the position
-//     return `Position in Alphabet: ${position}` 
+storage only the unities of this alphabet position 
 
-// }
-// const scoreAlphabet = positionInAlphabet();
 
-// console.log(scoreAlphabet);
+*/
