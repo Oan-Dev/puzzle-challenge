@@ -66,9 +66,11 @@ Searching position of array values in alphabet position
 
 // replacing the string array by it position in alphabet
 var alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split('');
-var alphabetPosition = text => 
+var alphabetPosition = () => 
   stringArray.map(x => alphabet.indexOf(x) + 1);
-console.log(alphabetPosition(stringArray));
+  const alphaPosition = alphabetPosition(stringArray);
+  
+  console.log(alphaPosition);
 
 /** 
 
@@ -76,3 +78,23 @@ storage only the unities of this alphabet position
 
 
 */
+
+// attempting for computing in conditional loop 
+
+// for(i = 0; i < alphaPosition.length; i++) {
+    
+//     if (item > 9) {
+//         return (item) => item % 10;
+// }
+// const positionUnity = alphaPosition.map(item => item)
+// }
+
+// console.log(positionUnity);
+
+
+// const positionUnities = function getUnity(alphaPosition) {
+
+
+//     return (alphaPosition ? '$2.00' : '$10.00');
+
+// }
