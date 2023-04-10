@@ -79,6 +79,8 @@ storage only the unities of this alphabet position
 
 */
 
+
+
 // attempting for computing in conditional loop 
 
 // for(i = 0; i < alphaPosition.length; i++) {
@@ -101,10 +103,33 @@ storage only the unities of this alphabet position
 
 // console.log(24 % 10);
 
-const positionUnity2 = [Number(alphaPosition) % 10]
+// const positionUnity2 = [Number(alphaPosition) % 10]
 
-const positionUnity = () => alphaPosition.forEach(element => (element > 9 ? element % 10 : element));
+// const positionUnity = () => alphaPosition.forEach(element => (element > 9 ? element % 10 : element));
 
 
-console.log(positionUnity(alphaPosition));
+// console.log(positionUnity(alphaPosition));
 
+// const positionUnity3 = (number) => {
+
+//     const element = number;
+     
+//     if(element  > 9) {
+//         const result = element % 10;
+//     }
+//     return
+// }
+
+// const unities = positionUnity3();
+
+// console.log(positionUnity3(alphaPosition));
+
+const test1 = alphaPosition.forEach( element => console.log(element, typeof element));
+
+const test2 = alphaPosition.forEach( (element) => {
+    if(element > 9 ) {
+        modulable = element % 10;
+        console.log( modulable)
+    }
+    console.log(element, typeof element)
+});
