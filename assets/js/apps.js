@@ -101,19 +101,14 @@ console.log('_____');
 
 //  for existing unities if the case => first + 3 then modulo 10 if adding > 9
 
-const conditionalModulo = existingUnities.map(element => {
-        if(element < 7) {
-            return element
+const conditionalAdding = existingUnities.filter(element => {
+        if(element > 6) {
+            return element = element + 3;
         }
-        else{
-          const result = element =+ 3;
-          return result %= 10;
-        }
-} )
+        
+} );
 
-const modularyUnities = conditionalModulo;
-
-console.log(modularyUnities);
+console.log(conditionalAdding);
 
 console.log('_____');
 
