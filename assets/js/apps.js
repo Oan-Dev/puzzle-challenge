@@ -143,9 +143,9 @@ the end of modified string,
 adding total number of beginning string
 
 */
-const promoCode = modularyResult.toString().split(" ").concat(dataSize);
+const promoCode = modularyResult.join('').concat(dataSize);
 
-console.log(promoCode);
+console.log('the promocode is',promoCode);
 
 
 console.log('_____');
