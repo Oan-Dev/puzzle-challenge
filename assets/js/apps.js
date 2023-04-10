@@ -101,19 +101,25 @@ console.log('_____');
 
 //  for existing unities if the case => first + 3 then modulo 10 if adding > 9
 
-const conditionalAdding = existingUnities.filter(element => {
+const getModulableAmongExistingUnities = existingUnities.filter(element => {
         if(element > 6) {
-            return element = element + 3;
+            return element;
         }
         
-} );
+})
+.map(element => element += 3)
+.map(element => element %= 10);
 
-console.log(conditionalAdding);
+console.log(getModulableAmongExistingUnities);
 
 console.log('_____');
 
 // reassembling the 2 arrays in one
-const modularyResult = existingUnities.concat(resultModulo);
+const modularyResult = existingUnities
+
+// I need to delete the last element from existingUnities for having a good array 
+// cause ever filter for applying a modulo
+.concat(getModulableAmongExistingUnities, resultModulo);
 
 console.log(modularyResult);
 
