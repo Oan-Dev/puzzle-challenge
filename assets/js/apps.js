@@ -114,8 +114,17 @@ console.log(getModulableAmongExistingUnities);
 
 console.log('_____');
 
+
 // reassembling the 2 arrays in one
-const modularyResult = existingUnities
+const modularyResult = existingUnities.filter(
+    element => {
+        if(element < 7 ) {
+            return element;
+        }
+        
+})
+    
+
 
 // I need to delete the last element from existingUnities for having a good array 
 // cause ever filter for applying a modulo
