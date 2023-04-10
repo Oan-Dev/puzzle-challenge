@@ -143,9 +143,9 @@ the end of modified string,
 adding total number of beginning string
 
 */
-const promoCode = modularyResult.join('').concat(dataSize);
+const promo = modularyResult.join('').concat(dataSize);
 
-console.log('the promocode is',promoCode);
+console.log('the promocode is',promo);
 
 
 console.log('_____');
@@ -157,3 +157,7 @@ https://formation.yoandev.co/?coupon=
 for returning a link to the new page with the discount
 
 */
+
+const promoCode = 'https://formation.yoandev.co/?coupon=' + promo;
+
+console.log(promoCode);
