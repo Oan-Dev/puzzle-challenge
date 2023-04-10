@@ -79,6 +79,8 @@ storage only the unities of this alphabet position
 
 */
 
+
+//separating numbers in 2 arrays
 const setModulable = alphaPosition.filter((element) => { return element > 9; });
 
 const existingUnities = alphaPosition.filter((element) => { return element < 10; });
@@ -90,14 +92,32 @@ console.log(existingUnities);
 
 console.log('_____');
 
-
+//applying the modulo operator 
 const resultModulo = setModulable.map( element => element % 10 );
 
 console.log(resultModulo);
 
 console.log('_____');
 
+//  for existing unities if the case => first + 3 then modulo 10 if adding > 9
 
+const conditionalModulo = existingUnities.map(element => {
+        if(element < 7) {
+            return element
+        }
+        else{
+          const result = element =+ 3;
+          return result %= 10;
+        }
+} )
+
+const modularyUnities = conditionalModulo;
+
+console.log(modularyUnities);
+
+console.log('_____');
+
+// reassembling the 2 arrays in one
 const modularyResult = existingUnities.concat(resultModulo);
 
 console.log(modularyResult);
