@@ -58,6 +58,7 @@ const stringArray = dataTable.filter(x => !numberArray.includes(x)).sort();
 
 console.log(stringArray);
 
+console.log('_____');
 /**  
 
 Searching position of array values in alphabet position
@@ -72,6 +73,7 @@ var alphabetPosition = () =>
   
   console.log(alphaPosition);
 
+  console.log('_____');
 /** 
 
 storage only the unities of this alphabet position 
@@ -123,12 +125,32 @@ const modularyResult = existingUnities.filter(
         }
         
 })
-    
 
-
-// I need to delete the last element from existingUnities for having a good array 
-// cause ever filter for applying a modulo
 .concat(getModulableAmongExistingUnities, resultModulo);
 
 console.log(modularyResult);
 
+console.log('_____');
+
+const dataSize = dataTable.length
+
+console.log(dataSize); // 14
+
+console.log('_____');
+
+/** 
+the end of modified string, 
+adding total number of beginning string
+
+*/
+console.log('_____');
+
+
+/** 
+adding the new string to 
+
+https://formation.yoandev.co/?coupon= 
+
+for returning a link to the new page with the discount
+
+*/
