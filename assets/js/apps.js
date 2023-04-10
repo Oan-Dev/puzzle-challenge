@@ -161,3 +161,14 @@ for returning a link to the new page with the discount
 const promoCode = 'https://formation.yoandev.co/?coupon=' + promo;
 
 console.log(promoCode);
+
+console.log('_____');
+
+const selector = document.querySelector('#discount').write(promoCode);
+
+const newA = document.createElement('a')
+
+const promoText = newA.textContent = promoCode;
+
+
+// document.write()

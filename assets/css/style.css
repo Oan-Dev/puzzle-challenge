@@ -32,14 +32,18 @@ body {
     min-height: 100vh;
 }
 
-.statement, .result {
+.result {
+    min-height: 30vh;
+}
+
+.statement, .exhibition, .result {
     /* background-color: var(--primary-bg); */
     background-color: var(--secondary-bg);
     padding: 30px;
     border-radius: 10px;
 }
 
-.container, .statement, .result, ol {
+.container, .statement, .exhibition, .result, ol {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -52,10 +56,16 @@ h1, h2 {
     text-align: center;
 }
 
+h1::first-letter,
+h2::first-letter,
+h2 span {
+    text-transform: capitalize;
+}
+
 .container p{
     text-align: justify;
 }
-.result {
+.exhibition {
     min-height: 80vh;
     /* background-color: darkgreen; */
 }
