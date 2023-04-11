@@ -164,11 +164,16 @@ console.log(promoCode);
 
 console.log('_____');
 
-const selector = document.querySelector('#discount').write(promoCode);
+const selector = document.querySelector('#discount');
 
-const newA = document.createElement('a')
+const newLink = document.createElement('a')
 
-const promoText = newA.textContent = promoCode;
+const promoText = newLink.textContent = promoCode;
 
 
+discount.append(newLink)
+
+const displayingDiscount = document.innerHTML = newLink; 
+
+console.log(newLink);
 // document.write()
