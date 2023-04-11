@@ -164,6 +164,11 @@ console.log(promoCode);
 
 console.log('_____');
 
+/** 
+Inserting  elemnts to the DOM 
+
+*/
+
 const selector = document.querySelector('#discount');
 
 const newLink = document.createElement('a')
@@ -171,7 +176,11 @@ const newLink = document.createElement('a')
 const promoText = newLink.textContent = promoCode;
 
 
-discount.append(newLink)
+discount.append(newLink);
+
+// adding a [href] setAttribute for redirecting to the link
+
+newLink.setAttribute('href', promoCode);
 
 const displayingDiscount = document.innerHTML = newLink; 
 
