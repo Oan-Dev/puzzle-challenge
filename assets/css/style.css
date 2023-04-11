@@ -10,7 +10,8 @@
     --secondary-bg: #1f18188e;
     --third-bg: #000;
     --danger-bg: rgba(245, 57, 57);
-    --success-bg: rgba(27, 221, 27, 0.842); 
+    --success-bg: rgba(27, 221, 27, 0.842);
+    --link-txt : rgb(15, 89, 250); 
     
 }
 
@@ -22,6 +23,7 @@ html {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: var(--link-txt);
 }
 
 body {
@@ -33,9 +35,6 @@ body {
     min-height: 100vh;
 }
 
-.result {
-    min-height: 30vh;
-}
 
 .statement, .exhibition, .result {
     /* background-color: var(--primary-bg); */
@@ -52,6 +51,15 @@ body {
     margin: 0 auto;
     max-width: 1400px;
 }
+
+.result {
+    min-height: 30vh;
+    gap :50px;
+}
+.result p {
+    margin: 0 auto;
+}
+
 
 h1, h2 {
     text-align: center;
