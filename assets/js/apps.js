@@ -211,7 +211,7 @@ Puis comme toute cette dernière se devait être traité tout en majuscule,
 alors j'opté pour cette option avant toute dissociation des lettres et des chiffre `;
 
 
-const deeepCopyProcess = `Afin de discerner les lettres des chiffres, 
+const deepCopyProcess = `Afin de discerner les lettres des chiffres, 
 tout d'abord j'ai fait une copie profonde. ` ;
 
 const mapFilterProcess = `Ensuite, j'ai créé mappé et filtré 
@@ -253,6 +253,23 @@ Puis, j'ai appliquer la méthode JOIN pour passer d'un tableau vers une simple c
 const finalisationProcess = `Pour finaliser l'objectif, J'ai associé la nouvelle chaine de caractère avec le lien par une concaténation`;
 
 const dash14 = '_____';
+
+const textContent = [
+    preambule,
+    importationUppercaseProcess,
+    deepCopyProcess,
+    mapFilterProcess,
+    typingNumberToStringProcess,
+    onlyLetterProcess,
+    alphabetPositionProcess,
+    TwoArraysforBigAndSmallNumbersProcess,
+    moduloForSmallScalableNumberProcess,
+    concatenationArraysProcess,
+    addingSizeInitialArrayProcess,
+    finalisationProcess
+ ]
+
+ // needing to transform the index in id for the section
 
 /**
 INSERT ALL PROCESS TO THE DOM 
