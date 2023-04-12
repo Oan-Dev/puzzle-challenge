@@ -31,9 +31,9 @@ body {
     color: var(--primary-txt);
 }
 
-header, footer, nav {
+header, footer, nav, .header {
     display: flex;
-    gap: 100px;
+    gap: 10px;
     min-height: 10vh;
     padding: 10px;
 
@@ -51,18 +51,26 @@ header, footer {
 
 header {
     margin-bottom: 20px;
-    /* max-width: 1400px; */
 }
 
+
+
 .logo, nav {
-    background-color: darkgreen;
     padding: 20px;
+    width: 50%;
+}
+.header {
+    width: 75%;
+    margin: 0 auto;
 }
 
 
 footer {
     justify-content: center;
     padding-top: 20px;
+}
+.fa-linkedin {
+    font-size: 1.5rem;
 }
 
 .container {
