@@ -267,7 +267,7 @@ const textContent = [
     concatenationArraysProcess,
     addingSizeInitialArrayProcess,
     finalisationProcess
- ]
+ ];
 
  // needing to transform the index in id for the section
 
