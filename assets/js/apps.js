@@ -1,40 +1,44 @@
+/** PART 1 */
 
 // retrieve the datas from the DOM and capitalize them.
 const data = document.getElementById("statementData").innerHTML.toUpperCase();
-console.log(data);
+
+const dash1 = '_____';
+/** PART 2 */
 
 // Deep copy in new array
 const dataTable = [... data];
-console.log(dataTable);
 
-// retrieve all elements and its types
-dataTable.forEach( element => console.log(element, typeof element));
+/** 
+retrieve all elements and its types 
+*/
+
+// dataTable.forEach( element => console.log(element, typeof element));
 
 // retrieve only numbers converted from string to number type
 const numberValueTable = dataTable.map(element => Number(element)).filter(Number);
-console.log(numberValueTable, typeof(numberValueTable.values));
 
-// adding number regex for checking number in number type ?
-numberValueTable.forEach( element => console.log(element, typeof element));
 
+// console.log(numberValueTable, typeof(numberValueTable.values));
+// numberValueTable.forEach( element => console.log(element, typeof element));
+
+const dash2 = '_____';
+/** PART 3 */
 
 /** 
 TEST for converting number typed from string to number type and
  separating the real number and real string 
-
-/
 
 */  
 
 //Separating Number and String
 
 /**
-creating a new array with number typed string for comparing between 2 arrays
+Creating a new array with number typed string for comparing between 2 arrays
 and return only real string
 
 */
 
-// const stringArray = [];
 const numberArray = [];
 
 for (i = 0; i < 10; i++) {
@@ -45,9 +49,9 @@ for (i = 0; i < 10; i++) {
     const numStr = numberArray[i].toString();
     numberArray.push(numStr)
 }
-console.log('_____');
+const dash3 = '_____';
 
-numberArray.forEach( element => console.log(element, typeof element));
+// numberArray.forEach( element => console.log(element, typeof element));
 
 /** 
 Comparing 2 arrays and return only strings => the letters 
@@ -56,24 +60,20 @@ Comparing 2 arrays and return only strings => the letters
 
 const stringArray = dataTable.filter(x => !numberArray.includes(x)).sort();
 
-console.log(stringArray);
 
-console.log('_____');
+const dash4 = '_____';
+
 /**  
-
 Searching position of array values in alphabet position
-
 */
 
 // replacing the string array by it position in alphabet
 var alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split('');
-var alphabetPosition = () => 
-  stringArray.map(x => alphabet.indexOf(x) + 1);
-  const alphaPosition = alphabetPosition(stringArray);
+var alphabetPosition = () => stringArray.map(x => alphabet.indexOf(x) + 1);
+const alphaPosition = alphabetPosition(stringArray);
   
-  console.log(alphaPosition);
 
-  console.log('_____');
+  const dash5 = '_____';
 /** 
 
 storage only the unities of this alphabet position 
@@ -81,6 +81,12 @@ storage only the unities of this alphabet position
 
 */
 
+/**
+
+ * PART 4 
+    Adding the number '3' then applying the modulo
+    on any scalable number > 9  
+ */
 
 //separating numbers in 2 arrays
 const setModulable = alphaPosition.filter((element) => { return element > 9; });
@@ -89,18 +95,12 @@ const existingUnities = alphaPosition.filter((element) => { return element < 10;
 
 
 
-console.log(setModulable);
-console.log(existingUnities);
-
-console.log('_____');
-
+const dash6 = '_____';
 //applying the modulo operator 
 const resultModulo = setModulable.map( element => element % 10 );
 
-console.log(resultModulo);
 
-console.log('_____');
-
+const dash7 = '_____';
 //  for existing unities if the case => first + 3 then modulo 10 if adding > 9
 
 const getModulableAmongExistingUnities = existingUnities.filter(element => {
@@ -112,10 +112,8 @@ const getModulableAmongExistingUnities = existingUnities.filter(element => {
 .map(element => element += 3)
 .map(element => element %= 10);
 
-console.log(getModulableAmongExistingUnities);
 
-console.log('_____');
-
+const dash8 = '_____';
 
 // reassembling the 2 arrays in one
 const modularyResult = existingUnities.filter(
@@ -128,15 +126,21 @@ const modularyResult = existingUnities.filter(
 
 .concat(getModulableAmongExistingUnities, resultModulo);
 
-console.log(modularyResult);
 
-console.log('_____');
+const dash9 = '_____';
+
+/** 
+
+PART 5
+    concat the array size number with the new string 
+    for completing the final string  
+
+*/
 
 const dataSize = dataTable.length
 
-console.log(dataSize); // 14
 
-console.log('_____');
+const dash10 = '_____';
 
 /** 
 the end of modified string, 
@@ -145,24 +149,26 @@ adding total number of beginning string
 */
 const promo = modularyResult.join('').concat(dataSize);
 
-console.log('the promocode is',promo);
+// console.log('the promocode is',promo);
 
 
-console.log('_____');
+const dash11 = '_____';
+
+
 /** 
-adding the new string to 
+Part 6 
 
-https://formation.yoandev.co/?coupon= 
-
-for returning a link to the new page with the discount
+ adding the new string to 
+ https://formation.yoandev.co/?coupon= 
+ for returning a link to the new page with the discount
+ and insert to the DOM
 
 */
 
 const promoCode = 'https://formation.yoandev.co/?coupon=' + promo;
 
-console.log(promoCode);
 
-console.log('_____');
+const dash12 = '_____';
 
 /** 
 Inserting  elemnts to the DOM 
@@ -184,5 +190,71 @@ newLink.setAttribute('href', promoCode);
 
 const displayingDiscount = document.innerHTML = newLink; 
 
-console.log(newLink);
+// console.log(newLink);
 // document.write()
+
+const dash13 = '_____';
+
+
+
+/** 
+    PART 7 EXHIBITION OF WORKING
+
+ */
+
+ //  CREATING THE TEXT ELEMENTS FOR THE STORYTELLING
+
+const preambule = `Pour réaliser ce casse-tête, j'ai procédé comme ceci :  `;
+
+const importationUppercaseProcess = `J'ai importé la chaine de caractère à traiter dans un tableau.
+Puis comme toute cette dernière se devait être traité tout en majuscule,
+alors j'opté pour cette option avant toute dissociation des lettres et des chiffre `;
+
+
+const deeepCopyProcess = `Afin de discerner les lettres des chiffres, 
+tout d'abord j'ai fait une copie profonde. ` ;
+
+const mapFilterProcess = `Ensuite, j'ai créé mappé et filtré 
+ce tableau pour n'avoir que les nombres typé NUMBER.`;
+
+
+const typingNumberToStringProcess = `Puis chacun des elements typé NUMBER est pushé dans un nouveau 
+tableau converti en STRING.`;
+
+const onlyLetterProcess = `pour avoir seulement les lettres sans les nombres, 
+j'ai opté pour une méthode filter en comparant 
+le tableau des nombres typés en STRING avec le tableau initial de l'ensemble des données. 
+Puis j'ai appliqué la méthode SORT pour les trier dans l'ordre alphabletique.`;
+
+const alphabetPositionProcess = `Pour remplacer les lettres par leur position dans l'alphabet, 
+Il était tout d'abord de créer un nouveau tableau de tout l'alphabet. 
+Ensuite de le mapé dans une fonction en recherchant l'index asscocié. 
+Puis par cette fonction matchant la position avec chaque lettre du tableau des lettres. `;
+
+
+const TwoArraysforBigAndSmallNumbersProcess = `Afin d'effectuer le MODULO pour les nombres > 9, 
+il fallait scinder le tableau des nombres des positions, 
+donc je devait appliquer un filtrage avec une condition `;
+
+const moduloForbigNumberArrayProcess = `Afin d'effectuer l'opération MODULO, j'ai opté pour la méthode MAP`;
+
+const moduloForSmallScalableNumberProcess = `Pour tout nombre scalable vers les Grands nombres en y ajoutant le nombre 3, 
+j'ai d'abord utiliser la méthode FILTER avec une condition verifiant la scalabilité 
+pour y appliquer un double mapping appliquant l'addition et modulo`;
+
+const concatenationArraysProcess = `Pour avoir l'ensemble de la nouvelle chaine de caractère, il était nécessaire, tout d'abord, 
+de filtrer les petits nombres scalables des non-scalable. 
+puis appliquer la méthode CONCAT pour associer tous les nombres des tableaux`;
+
+const addingSizeInitialArrayProcess = `Pour completer la nouvelle chaine de caractère, j'ai, tout d'abord recherché la taille du premier tableau. 
+Puis, j'ai appliquer la méthode JOIN pour passer d'un tableau vers une simple chaine de caractère.`; 
+
+
+const finalisationProcess = `Pour finaliser l'objectif, J'ai associé la nouvelle chaine de caractère avec le lien par une concaténation`;
+
+
+/**
+INSERT ALL PROCESS TO THE DOM 
+
+*/
+
