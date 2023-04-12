@@ -252,9 +252,76 @@ Puis, j'ai appliquer la méthode JOIN pour passer d'un tableau vers une simple c
 
 const finalisationProcess = `Pour finaliser l'objectif, J'ai associé la nouvelle chaine de caractère avec le lien par une concaténation`;
 
+const dash14 = '_____';
 
 /**
 INSERT ALL PROCESS TO THE DOM 
 
 */
+
+
+const processClass = document.querySelector('.story');
+
+processClass.setAttribute('id', 'story');
+
+const processId = processClass.id
+
+const getProcessId = document.querySelector('#story')
+
+// console.log(getProcessId);
+
+const dash15= '_____';
+
+/** CREATING ELEMENTS AND SETTING ATTRIBUTE ID */
+
+const section = document.createElement('section');
+
+for (i = 0 ; i < section.length; i++) {
+    document.setAttribute('id', 'processing-'  + i) ;
+    section.id;
+}
+
+console.log(section.id);
+
+
+const h2 = document.createElement('h2');
+
+
+const p = document.createElement('p');
+
+
+
+const pre = document.createElement('pre');
+
+const code = document.createElement('code');
+
+const dash16= '_____';
+
+/** APPENDCHILD */
+const sectionParent = getProcessId.appendChild(section);
+
+section.style.backgroundColor = 'darkgreen';
+section.style.minHeight = '30vh';
+
+p.style.backgroundColor = 'darkblue';
+p.style.minHeight = '30vh';
+
+h2.style.backgroundColor = 'darkorange';
+h2.style.minHeight = '5vh';
+
+pre.style.backgroundColor = 'darkgray';
+pre.style.minHeight = '50vh';
+
+
+// console.log(sectionParent.children);
+// console.log(section.id);
+
+const sectionChildren = section.appendChild(h2) + section.appendChild(p) + section.appendChild(pre);
+
+
+const preCode = pre.appendChild(code);
+
+// console.log(preCode);
+
+
 
