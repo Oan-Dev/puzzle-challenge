@@ -38,19 +38,16 @@ header, footer, nav {
     padding: 10px;
 
 }
-header, footer {
-    background-color: var(--secondary-bg);
-    background-color: darkgreen;
-}
+
 header, nav{
 
     justify-content: space-between;
+    justify-items:center;
     
 }
 
 header, footer {
-    background-color: var(--secondary-bg);
-    background-color: darkgreen;
+    background-color: var(--primary-bg);
 }
 
 header {
@@ -60,6 +57,7 @@ header {
 
 footer {
     justify-content: center;
+    padding-top: 20px;
 }
 
 .container {
@@ -84,7 +82,7 @@ main {
     width: 90%;
     margin: 0 auto;
     max-width: 1400px;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
 }
 
