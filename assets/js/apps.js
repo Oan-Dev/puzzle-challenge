@@ -269,6 +269,8 @@ const textContent = [
     finalisationProcess
  ];
 
+ const txtArr = [...textContent];
+ console.log(txtArr);
  // needing to transform the index in id for the section
 
 /**
@@ -349,10 +351,42 @@ const preCode = pre.appendChild(code);
   
 //   console.log(joined);
 
-const joined = textContent.map((el, i) => {
-    return (i % 2 === 0) ?  `<p>${el}</p>`: null ;
-  }).join('')
+// const joined = textContent.map((el, i) => {
+//     return (i % 2 === 0) ?  `<p>${el}</p>`: null ;
+//   }).join('')
   
-  console.log(joined);
+//   console.log(joined);
 
-  
+
+// const map1 = new Map();
+
+// map1.set('a', 1);
+// map1.set('b', 2);
+// map1.set('c', 3);
+
+// console.log(map1.get('a'));
+// // Expected output: 1
+
+// map1.set('a', 97);
+
+// console.log(map1.get('a'));
+// // Expected output: 97
+
+// console.log(map1.size);
+// // Expected output: 3
+
+// map1.delete('b');
+
+// console.log(map1.size);
+// // Expected output: 2
+
+function arrToPar(txtArr){ //For JS-Array --> HTML content
+    
+    for(var i = 0; i < txtArr.length; i++){
+        p.innerText += txtArr[i];
+    }
+    return(p);
+}
+
+console.log(arrToPar(txtArr));
+
