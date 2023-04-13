@@ -270,8 +270,8 @@ const textContent = [
  ];
 
  const txtArr = [...textContent];
- console.log(txtArr);
- // needing to transform the index in id for the section
+//  console.log(txtArr);
+
 
 /**
 INSERT ALL PROCESS TO THE DOM 
@@ -294,13 +294,6 @@ const dash15= '_____';
 /** CREATING ELEMENTS AND SETTING ATTRIBUTE ID */
 
 const section = document.createElement('section');
-
-// for (i = 0 ; i < section.length; i++) {
-//     document.setAttribute('id', 'processing-'  + i) ;
-//     section.id;
-// }
-
-// console.log(section.id);
 
 
 const h2 = document.createElement('h2');
@@ -335,12 +328,16 @@ pre.style.minHeight = '50vh';
 // console.log(sectionParent.children);
 // console.log(section.id);
 
-const sectionChildren = section.appendChild(h2) + section.appendChild(p) + section.appendChild(pre);
-
-
 const preCode = pre.appendChild(code);
-
 // console.log(preCode);
+
+// const sectionChildren = section.appendChild(h2) + section.appendChild(p) + section.appendChild(pre);
+
+const sectionH2 = section.appendChild(h2);
+const sectionPara = section.appendChild(p);
+const sectionPre = section.appendChild(pre);
+
+
 
 /** INSERT CONTENTS TO THE P */
 
@@ -350,7 +347,20 @@ function arrToPar(txtArr){ //For JS-Array --> HTML content
         p.innerText += txtArr[i];
     }
     return(p);
-}
+};
 
 console.log(arrToPar(txtArr));
 
+
+/** INSERT PARAGRAPH INDEXES TO SECTION */
+
+// needing to transform the index in id for the section
+
+
+
+// for (i = 0 ; i < section.length; i++) {
+//     document.setAttribute('id', 'processing-'  + i) ;
+//     section.id;
+// }
+
+// console.log(section.id);
