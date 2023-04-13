@@ -293,12 +293,12 @@ const dash15= '_____';
 
 const section = document.createElement('section');
 
-for (i = 0 ; i < section.length; i++) {
-    document.setAttribute('id', 'processing-'  + i) ;
-    section.id;
-}
+// for (i = 0 ; i < section.length; i++) {
+//     document.setAttribute('id', 'processing-'  + i) ;
+//     section.id;
+// }
 
-console.log(section.id);
+// console.log(section.id);
 
 
 const h2 = document.createElement('h2');
@@ -340,5 +340,19 @@ const preCode = pre.appendChild(code);
 
 // console.log(preCode);
 
+/** INSERT CONTENTS TO THE P */
 
 
+// const joined = textContent.map((el, i) => {
+//     return (i % 2 === 0) ? `<h2>${el}</h2>` : `<p>${el}</p>` ;
+//   }).join('')
+  
+//   console.log(joined);
+
+const joined = textContent.map((el, i) => {
+    return (i % 2 === 0) ?  `<p>${el}</p>`: null ;
+  }).join('')
+  
+  console.log(joined);
+
+  
