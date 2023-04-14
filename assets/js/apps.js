@@ -193,7 +193,7 @@ const displayingDiscount = document.innerHTML = newLink;
 // console.log(newLink);
 // document.write()
 
-const dash13 = '_____';
+const dash13 = '__________________________';
 
 
 
@@ -348,10 +348,13 @@ function arrToPar(txtArr){ //For JS-Array --> HTML content
     
     for(let i = 0; i < txtArr.length; i++){
         p.innerText += txtArr[i];
+        // p.setAttribute( 'id', txtArr[i] );
     }
     return(p);
 };
 const insertToDom = arrToPar(txtArr);
+
+// console.log(p.id);
 
 // function insertPara (txtArr) {
 //     for (let i=0, len=txtArr.length; i < len; i++) {
@@ -387,9 +390,9 @@ const insertToDom = arrToPar(txtArr);
 
 /** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
 
-const paraTxt = txtArr.forEach(item => p.push(item))
+// const paraTxt = txtArr.forEach(item => p.push(item))
 
-console.log(paraTxt);
+// console.log(paraTxt);
 // function paraToSection(p){ //For JS-Array --> HTML content
 //       for(let i = 0; i < txtArr.length; i++){
 //         if(p.innerText === txtArr[i]) {
