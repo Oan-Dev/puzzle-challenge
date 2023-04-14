@@ -314,9 +314,12 @@ const sectionParent = getProcessId.appendChild(section);
 
 section.style.backgroundColor = 'darkgreen';
 section.style.minHeight = '30vh';
+section.style.marginBottom = '20px';
 
 p.style.backgroundColor = 'darkblue';
 p.style.minHeight = '30vh';
+p.style.padding = '20px';
+p.style.marginBottom = '20px';
 
 h2.style.backgroundColor = 'darkorange';
 h2.style.minHeight = '5vh';
@@ -358,14 +361,14 @@ const insertToDom = arrToPar(txtArr);
 
 /** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
 
-// function paraToSection(txtArr){ //For JS-Array --> HTML content
-    
-//     for(let i = 0; i < txtArr.length; i++){
-//         section.appendChild(p) += txtArr[i];
-//         return(section);
+// function paraToSection(p){ //For JS-Array --> HTML content
+//       for(let i = 0; i < txtArr.length; i++){
+//         if(p.innerText === txtArr[i]) {
+//             section.appendChild(p) += p;
+//             return(section);
+//         }
 // };
-
-// const paraToSection = paraToSection(section);
+// const paraToSection = paraToSection(p);
 
 
 /** INSERT PARAGRAPH INDEXES TO SECTION */
