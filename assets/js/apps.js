@@ -353,8 +353,20 @@ function arrToPar(txtArr){ //For JS-Array --> HTML content
 };
 const insertToDom = arrToPar(txtArr);
 
-// let paraSection = document.querySelector("<p>", { id: paraName[i] });
-// document.querySelector('#story').append(section);
+// function insertPara (txtArr) {
+//     for (let i=0, len=txtArr.length; i < len; i++) {
+//         const paraSection = document.querySelector(p, { id: txtArr[i] });
+//         document.querySelector('#story').append(section);
+//         return paraSection
+//     }
+// }
+
+// const sectionParagraph = insertPara(txtArr);
+
+// console.log(sectionParagraph);
+
+
+
 
 
 // function arrToPar(txtArr){ //For JS-Array --> HTML content
