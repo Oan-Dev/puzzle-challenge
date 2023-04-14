@@ -340,7 +340,15 @@ const sectionH2 = section.appendChild(h2);
 const sectionPara = section.appendChild(p);
 const sectionPre = section.appendChild(pre);
 
+/** INDEXES OF TEXT CONTENT */
 
+const indexes = textContent.map((currElement, index) => {
+    // console.log("The current iteration is: " + index);
+    //   console.log("\n");
+    return index; //equivalent to list[index]
+  });
+
+console.log(indexes);
 
 /** INSERT CONTENTS TO THE P */
 
