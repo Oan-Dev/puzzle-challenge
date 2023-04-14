@@ -353,6 +353,9 @@ function arrToPar(txtArr){ //For JS-Array --> HTML content
 };
 const insertToDom = arrToPar(txtArr);
 
+// let paraSection = document.querySelector("<p>", { id: paraName[i] });
+// document.querySelector('#story').append(section);
+
 
 // function arrToPar(txtArr){ //For JS-Array --> HTML content
 //     const divP = new p;
