@@ -350,6 +350,18 @@ const indexes = textContent.map((currElement, index) => {
 
 console.log(indexes);
 
+function sectionId(txtArr){ //For JS-Array --> HTML content
+    
+    for(let i = 0; i < indexes.length; i++){
+        section.setAttribute('id', indexes);
+        // p.setAttribute( 'id', txtArr[i] );
+    }
+    return(section);
+};
+const insertIdToSection = sectionId(indexes);
+
+console.log(insertIdToSection);
+
 /** INSERT CONTENTS TO THE P */
 
 function arrToPar(txtArr){ //For JS-Array --> HTML content
