@@ -362,6 +362,8 @@ const insertIdToSection = sectionId(indexes);
 
 console.log(insertIdToSection);
 
+
+
 /** INSERT CONTENTS TO THE P */
 
 function arrToPar(txtArr){ //For JS-Array --> HTML content
@@ -374,64 +376,7 @@ function arrToPar(txtArr){ //For JS-Array --> HTML content
 };
 const insertToDom = arrToPar(txtArr);
 
-// console.log(p.id);
-
-// function insertPara (txtArr) {
-//     for (let i=0, len=txtArr.length; i < len; i++) {
-//         const paraSection = document.querySelector(p, { id: txtArr[i] });
-//         document.querySelector('#story').append(section);
-//         return paraSection
-//     }
-// }
-
-// const sectionParagraph = insertPara(txtArr);
-
-// console.log(sectionParagraph);
-
-
-
-
-
-// function arrToPar(txtArr){ //For JS-Array --> HTML content
-//     const divP = new p;
-//     for(let i = 0; i < txtArr.length; i++){
-//         divP.innerText += txtArr[i];
-//     }
-//     return(p);
-// };
-// const insertToDom2 = arrToPar(txtArr);
-// console.log(insertToDom);
-
-
-// txtArr.forEach( element => console.log(element, element[i]));
-
-
-
 
 /** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
 
-// const paraTxt = txtArr.forEach(item => p.push(item))
 
-// console.log(paraTxt);
-// function paraToSection(p){ //For JS-Array --> HTML content
-//       for(let i = 0; i < txtArr.length; i++){
-//         if(p.innerText === txtArr[i]) {
-//             section.appendChild(p) += p;
-//             return(section);
-//         }
-// };
-// const paraToSection = paraToSection(p);
-
-
-/** INSERT PARAGRAPH INDEXES TO SECTION */
-
-// needing to transform the index in id for the section
-
-
-
-// for (i = 0 ; i < section.length; i++) {
-//     document.setAttribute('id', 'processing-'  + i) ;
-//     section.id;
-// }
-
-// console.log(section.id);
