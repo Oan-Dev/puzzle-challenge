@@ -351,16 +351,30 @@ function arrToPar(txtArr){ //For JS-Array --> HTML content
     }
     return(p);
 };
-
 const insertToDom = arrToPar(txtArr);
 
+
+// function arrToPar(txtArr){ //For JS-Array --> HTML content
+//     const divP = new p;
+//     for(let i = 0; i < txtArr.length; i++){
+//         divP.innerText += txtArr[i];
+//     }
+//     return(p);
+// };
+// const insertToDom2 = arrToPar(txtArr);
 // console.log(insertToDom);
+
 
 // txtArr.forEach( element => console.log(element, element[i]));
 
 
+
+
 /** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
 
+const paraTxt = txtArr.forEach(item => p.push(item))
+
+console.log(paraTxt);
 // function paraToSection(p){ //For JS-Array --> HTML content
 //       for(let i = 0; i < txtArr.length; i++){
 //         if(p.innerText === txtArr[i]) {
