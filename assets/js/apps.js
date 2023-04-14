@@ -343,13 +343,29 @@ const sectionPre = section.appendChild(pre);
 
 function arrToPar(txtArr){ //For JS-Array --> HTML content
     
-    for(var i = 0; i < txtArr.length; i++){
+    for(let i = 0; i < txtArr.length; i++){
         p.innerText += txtArr[i];
     }
     return(p);
 };
 
-console.log(arrToPar(txtArr));
+const insertToDom = arrToPar(txtArr);
+
+// console.log(insertToDom);
+
+// txtArr.forEach( element => console.log(element, element[i]));
+
+
+/** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
+
+// function paraToSection(txtArr){ //For JS-Array --> HTML content
+    
+//     for(let i = 0; i < txtArr.length; i++){
+//         section.appendChild(p) += txtArr[i];
+//         return(section);
+// };
+
+// const paraToSection = paraToSection(section);
 
 
 /** INSERT PARAGRAPH INDEXES TO SECTION */
