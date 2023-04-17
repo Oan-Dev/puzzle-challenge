@@ -123,22 +123,13 @@ const processId = processClass.id
 
 const getProcessId = document.querySelector('#story')
 
-console.log(getProcessId);
+// console.log(getProcessId);
 
  '_____';
 
 /** CREATING ELEMENTS AND SETTING ATTRIBUTE ID */
 
-// const section = document.createElement('section');
-
-for(let i=0;i< contentObj.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
-     let newSection = document.createElement('section');
-     getProcessId.appendChild(newSection);
-     newSection.setAttribute("id", i);
- }
-
- const toto = document.querySelector('#preambule');
- console.log(toto);
+const section = document.createElement('section');
 
 
 const h2 = document.createElement('h2');
@@ -201,9 +192,9 @@ console.log(contentKeys);
 // console.log(idSection);
 
 
-for(let i = 0; i < contentKeys.length; i++) {
-     section.setAttribute('id', contentKeys[i])
-}
+// for(let i = 0; i < contentKeys.length; i++) {
+//      section.setAttribute('id', contentKeys[i])
+// }
 
 // console.log(indexes);
 
