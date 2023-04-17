@@ -56,13 +56,13 @@ console.log(getProcessId);
 
 '_____';
 
-// const contentKeys = Object.keys(contentObj);
+const contentKeys = Object.keys(contentObj);
 
-// console.log(contentKeys);
+console.log(contentKeys);
 
-// const objContent = Object.values(contentObj);
+const objContent = Object.values(contentObj);
 
-// console.log(objContent);
+console.log(objContent);
 
 '_____';
 
@@ -71,8 +71,12 @@ const loop1 = keys.forEach((value, index) => console.log(value, 'index :', index
 
 
 '----'
-let newSection = document.createElement('section');
-// const addSectionAtParent = getProcessId.appendChild(newSection);
+
+const section = document.createElement('section');
+// let newSection = document.createElement('section');
+const addSectionAtParent = getProcessId.appendChild(section);
+
+console.log(addSectionAtParent);
 
 '_____';
 
@@ -81,20 +85,24 @@ let newSection = document.createElement('section');
 //     newSection.setAttribute("id",  i);
 // }
 
-for(let i=0;i< keys.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
-    // let newSection = document.createElement("section");
+for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
+    let newSection = document.createElement("section");
     getProcessId.appendChild(newSection);
     newSection.setAttribute("id",  i);
+    newSection.style.backgroundColor = 'darkgreen';
+    newSection.style.minHeight = '30vh';
+    newSection.style.marginBottom = '20px';
 }
 
 
 const getAllId = document.querySelectorAll('*[id]')
 console.log(getAllId);
 '____'
-newSection.style.backgroundColor = 'darkgreen';
-newSection.style.minHeight = '30vh';
-newSection.style.marginBottom = '20px';
 
+
+section.style.backgroundColor = 'darkgreen';
+section.style.minHeight = '30vh';
+section.style.marginBottom = '20px';
 // p.style.backgroundColor = 'darkblue';
 // p.style.minHeight = '30vh';
 // p.style.padding = '20px';
