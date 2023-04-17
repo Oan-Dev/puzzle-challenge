@@ -72,9 +72,9 @@ const loop1 = keys.forEach((value, index) => console.log(value, 'index :', index
 
 '----'
 
-const section = document.createElement('section');
+const newSection = document.createElement('section');
 // let newSection = document.createElement('section');
-const addSectionAtParent = getProcessId.appendChild(section);
+const addSectionAtParent = getProcessId.appendChild(newSection);
 
 console.log(addSectionAtParent);
 
@@ -100,9 +100,9 @@ console.log(getAllId);
 '____'
 
 
-section.style.backgroundColor = 'darkgreen';
-section.style.minHeight = '30vh';
-section.style.marginBottom = '20px';
+// section.style.backgroundColor = 'darkgreen';
+// section.style.minHeight = '30vh';
+// section.style.marginBottom = '20px';
 // p.style.backgroundColor = 'darkblue';
 // p.style.minHeight = '30vh';
 // p.style.padding = '20px';
