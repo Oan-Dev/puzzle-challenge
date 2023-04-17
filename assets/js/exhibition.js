@@ -180,6 +180,8 @@ const sectionPre = section.appendChild(pre);
 
 /** INDEXES OF TEXT CONTENT */
 
+
+
 const contentKeys = Object.keys(contentObj);
 
 console.log(contentKeys);
@@ -206,17 +208,23 @@ console.log(objContent);
 /** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
 
 '----'
+const getAllId = document.querySelectorAll('*[id]')
+console.log(getAllId);
 
-function addAllSections() {
+'----'
 
-     if (getProcessId < contentKeys.length) {
-          for(let i = 0; i < contentKeys.length; i++) {
-              return sectionParent.push();
-          }
+// function addAllSections() {
 
-     }
-}
+//      if (getProcessId < contentKeys.length) {
+//           for(let i = 0; i < contentKeys.length; i++) {
+//               return sectionParent.push();
+//           }
 
-const allSection = addAllSections();
+//      }
+// }
 
-console.log(allSection);
+// const allSection = addAllSections();
+
+// const allSection = contentObj.forEach((contentObj.value, contentObj.index),  => sectionParent.push(item[i]) ) 
+
+// console.log(allSection);
