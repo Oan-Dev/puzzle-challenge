@@ -89,10 +89,20 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
     let newSection = document.createElement("section");
     getProcessId.appendChild(newSection);
     newSection.setAttribute("id",  i);
+    newSection.innerHTML = (objContent[i]);
     newSection.style.backgroundColor = 'darkgreen';
     newSection.style.minHeight = '30vh';
     newSection.style.marginBottom = '20px';
+    newSection.style.padding = '20px';
 }
+
+
+// for(let i=0;i< contentKeys.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
+//   newSection.setAttribute('id', (contentKeys[i]))
+//   newSection.style.backgroundColor ='darkblue';
+// }
+
+
 
 
 const getAllId = document.querySelectorAll('*[id]')
