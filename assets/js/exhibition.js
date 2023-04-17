@@ -103,7 +103,9 @@ const contentObj = {
      'finalisationProcess' :                  `Pour finaliser l'objectif, J'ai associé la nouvelle chaine de caractère avec le lien par une concaténation`,
 
 }
-console.log(contentObj);
+// console.log(contentObj);
+
+
 
 
 
@@ -146,6 +148,8 @@ const code = document.createElement('code');
 /** APPENDCHILD */
 const sectionParent = getProcessId.appendChild(section);
 
+
+
 section.style.backgroundColor = 'darkgreen';
 section.style.minHeight = '30vh';
 section.style.marginBottom = '20px';
@@ -176,15 +180,43 @@ const sectionPre = section.appendChild(pre);
 
 /** INDEXES OF TEXT CONTENT */
 
+const contentKeys = Object.keys(contentObj);
+
+console.log(contentKeys);
+
+// const idSection = section.setAttribute("id", contentKeys[i]);
+
+// console.log(idSection);
+
+
+for(let i = 0; i < contentKeys.length; i++) {
+     section.setAttribute('id', contentKeys[i])
+}
 
 // console.log(indexes);
 
 
 /** INSERT CONTENTS TO THE P */
 
+const objContent = Object.values(contentObj);
 
+console.log(objContent);
 
 
 /** INSERT EACH PARAGRAPH INTO ONLY ONE SECTION */
 
+'----'
 
+function addAllSections() {
+
+     if (getProcessId < contentKeys.length) {
+          for(let i = 0; i < contentKeys.length; i++) {
+              return sectionParent.push();
+          }
+
+     }
+}
+
+const allSection = addAllSections();
+
+console.log(allSection);
