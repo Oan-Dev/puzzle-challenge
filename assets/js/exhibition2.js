@@ -66,10 +66,6 @@ console.log(objContent);
 
 '_____';
 
-const keys = ['bibi', 'baba', 'bebe'];
-const loop1 = keys.forEach((value, index) => console.log(value, 'index :', index));
-
-
 '----'
 
 const newSection = document.createElement('section');
@@ -80,32 +76,26 @@ console.log(addSectionAtParent);
 
 '_____';
 
-// for(let i=0;i< keys.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
-//     getProcessId.appendChild(newSection);
-//     newSection.setAttribute("id",  i);
-// }
+
 
 for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
     let newSection = document.createElement("section");
+    let p = document.createElement("p");
+    let pre = document.createElement("pre");
+    let code = document.createElement("code");
+    let codeNode = pre.appendChild(code);
     getProcessId.appendChild(newSection);
+    getProcessId.appendChild(newSection)
+                .appendChild(codeNode);
     newSection.setAttribute("id",  i);
+     p.innerHTML = (objContent[i]);
     newSection.innerHTML = (objContent[i]);
     newSection.style.backgroundColor = 'darkgreen';
     newSection.style.minHeight = '30vh';
     newSection.style.marginBottom = '20px';
     newSection.style.padding = '20px';
 }
-for(let i=0;i< contentObj.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
-   
-    newSection.setAttribute("id",  i);
 
-}
-
-
-// for(let i=0;i< contentKeys.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
-//   newSection.setAttribute('id', (contentKeys[i]))
-//   newSection.style.backgroundColor ='darkblue';
-// }
 
 
 
