@@ -95,6 +95,11 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
     newSection.style.marginBottom = '20px';
     newSection.style.padding = '20px';
 }
+for(let i=0;i< contentObj.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
+   
+    newSection.setAttribute("id",  i);
+
+}
 
 
 // for(let i=0;i< contentKeys.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
