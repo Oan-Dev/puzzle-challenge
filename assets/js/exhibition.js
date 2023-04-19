@@ -50,7 +50,7 @@ const getProcessId = document.querySelector('#story')
 
 const getIdExhib = document.querySelector('#exhibition')
 
-console.log(getProcessId);
+// console.log(getProcessId);
 // console.log(getIdExhib);
 
 
@@ -58,11 +58,11 @@ console.log(getProcessId);
 
 const contentKeys = Object.keys(contentObj);
 
-console.log(contentKeys);
+// console.log(contentKeys);
 
 const objContent = Object.values(contentObj);
 
-console.log(objContent);
+// console.log(objContent);
 
 '_____';
 
@@ -72,7 +72,7 @@ const newSection = document.createElement('section');
 // let newSection = document.createElement('section');
 const addSectionAtParent = getProcessId.appendChild(newSection);
 
-console.log(addSectionAtParent);
+// console.log(addSectionAtParent);
 
 '_____';
 
@@ -100,9 +100,9 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
 
 
 
-const getAllId = document.querySelectorAll('*[id]')
-console.log(getAllId);
-'____'
+// const getAllId = document.querySelectorAll('*[id]')
+// console.log(getAllId);
+// '____'
 
 
 // section.style.backgroundColor = 'darkgreen';

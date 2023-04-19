@@ -112,5 +112,23 @@ const exhibitedCodeArray = [
 //         preCode.innerHTML(exhibitedCodeArray[i])
 // }
 
+'_____'
+
+function filterSection() {
+    var elements = document.getElementsByTagName('section');
+
+    for (var i = 0; i < elements.length; i++) {
+
+        const el = elements[i].id;
+
+        console.log(el); 
+        //  get div id of divs with data-title !=(not equal) filterItem
+        // make display:none of matching divs
+    }
+}
+
+filterSection()
+
+
 
 
