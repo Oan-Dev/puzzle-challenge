@@ -71,6 +71,23 @@ const promo = newArray.join('').concat(dataSize);`
 
 const websiteCompleted = `const promoCode = 'https://formation.yoandev.co/?coupon=' + promo;`
 
+// Creating an array from all code for exhibiting
+
+const exhibitedCodeArray = [
+        retrievingData,
+        deepDataCopy,
+        mappingAndFiltering, 
+        numberConvertedInString,
+        comparatingDataWithNumberArray,
+        alphabetArrayAndComparaingWithStringArray,
+        splitingForRunningModulo,
+        applyingModuloForNumberNotUnity,
+        scalableArray,
+        reassemblyingArrays,
+        newString,
+        websiteCompleted
+    ]
+
 
 
 
