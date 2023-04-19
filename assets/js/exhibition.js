@@ -13,7 +13,7 @@ const contentObj = {
 
     'onlyLetterProcess' :                    `pour avoir seulement les lettres sans les nombres, j'ai opté pour une méthode filter en comparant le tableau des nombres typés en STRING avec le tableau initial de l'ensemble des données. Puis j'ai appliqué la méthode SORT pour les trier dans l'ordre alphabletique.`,
 
-    'alphabetPositionProcess' :              `Pour remplacer les lettres par leur position dans l'alphabet, Il était tout d'abord de créer un nouveau tableau de tout l'alphabet. Ensuite de le mapé dans une fonction en recherchant l'index asscocié. Puis par cette fonction matchant la position avec chaque lettre du tableau des lettres. `,
+    'alphabetPositionProcess' :              `Pour remplacer les lettres par leur position dans l'alphabet, Il était tout d'abord nécessaire de créer un nouveau tableau de tout l'alphabet. Ensuite de le maper dans une fonction en recherchant l'index asscocié. Puis par cette fonction matchant la position avec chaque lettre du tableau des lettres. `,
 
     'TwoArraysforBigAndSmallNumbersProcess': `Afin d'effectuer le MODULO pour les nombres > 9, il fallait scinder le tableau des nombres des positions, donc je devait appliquer un filtrage avec une condition `
    ,
