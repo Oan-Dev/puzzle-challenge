@@ -86,9 +86,31 @@ const exhibitedCodeArray = [
         reassemblyingArrays,
         newString,
         websiteCompleted
-    ]
+]
 
 
+// GETTING EACH ID FROM EACH SECTION
+
+
+// const sectionTag = document.getElementsByTagName('section');
+
+// const idSectionTag = sectionTag.forEach(element => { 
+
+//         const elementID = element.id ;
+//         return elementID
+    
+// });
+
+// INSERT DYNAMICALLY ALL THE CODE IN CodeTag
+
+
+// for(let i =0; i < exhibitedCodeArray.length; i++) {
+//         // let section = document.querySelectorAll('section')
+
+//         let preCode = document.getElementsByTagName('code');
+//         // if()
+//         preCode.innerHTML(exhibitedCodeArray[i])
+// }
 
 
 
