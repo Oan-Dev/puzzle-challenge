@@ -96,7 +96,13 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
     newSection.style.padding = '20px';
 }
 
+// for(let i=0;i< contentObj.length;i++){ 
+//     let attr = document.getElementsByTagName('section')
+//     if(attr === section.id){
+//         attr.setAttribute('id', contentKeys[key])
 
+//     }
+// }
 
 
 

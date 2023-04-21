@@ -114,21 +114,38 @@ const exhibitedCodeArray = [
 
 '_____'
 
-function filterSection() {
-    var elements = document.getElementsByTagName('section');
+// function filterSection() {
+//     var elements = document.getElementsByTagName('section');
 
-    for (var i = 0; i < elements.length; i++) {
+//     for (var i = 0; i < elements.length; i++) {
 
-        const el = elements[i].id;
+//         const el = elements[i].id;
 
-        console.log(el); 
-        //  get div id of divs with data-title !=(not equal) filterItem
-        // make display:none of matching divs
-    }
-}
+//         console.log(el); 
+//         //  get div id of divs with data-title !=(not equal) filterItem
+//         // make display:none of matching divs
+//     }
+// }
 
-filterSection()
+// filterSection()
 
 
+'_____'
+
+// function filterSection() {
+//     var elements = document.getElementsByTagName('section');
+
+//     for (let i = 0; i < elements.length; i++) {
+
+//         let el = elements[i].id;
+//           el.map(function(){
+//             return this.id;
+//         }).get()
+//         // console.log(el); 
+
+// }
+// }
+
+// filterSection()
 
 
