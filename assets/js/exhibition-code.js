@@ -106,7 +106,7 @@ for(let i = 0; i < codeContent; i++) {
 
     console.log(codeTag);
 
-    if(!!sectionTag && sectionTag.hasAttribute('id')) {
+    if(sectionTag.hasAttribute('id')) {
         codeTag.innerHTML = (codeContent[i]);
     }
 

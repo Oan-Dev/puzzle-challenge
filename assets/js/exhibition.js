@@ -49,7 +49,18 @@ const processId = processClass.id
 const getProcessId = document.querySelector('#story')
 
 const getIdExhib = document.querySelector('#exhibition')
+// for(let i=0;i< contentObj.length;i++){ 
+//     let attr = document.getElementsByTagName('section')
+//     if(attr === section.id){
+//         attr.setAttribute('id', contentKeys[key])
 
+//     }
+// }
+
+
+
+// const getAllId = document.querySelectorAll('*[id]')
+// console.log(getAllId);
 // console.log(getProcessId);
 // console.log(getIdExhib);
 
@@ -78,36 +89,43 @@ const addSectionAtParent = getProcessId.appendChild(newSection);
 
 
 
+'----'
+
 for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE ARRAY
+   
+   /** Creatng the diff elements  */
     let newSection = document.createElement("section");
     let p = document.createElement("p");
     let pre = document.createElement("pre");
     let code = document.createElement("code");
-    let codeNode = pre.appendChild(code);
+
+    /** linking with the diff elements */
+    pre.appendChild(code);
     getProcessId.appendChild(newSection);
-    getProcessId.appendChild(newSection)
-                .appendChild(codeNode);
+    newSection.appendChild(p);
+    newSection.appendChild(pre);
+
+    /** insert the id for each section */
     newSection.setAttribute("id",  i);
+
+    /**insert the content in in section 'p' */
      p.innerHTML = (objContent[i]);
-    newSection.innerHTML = (objContent[i]);
-    newSection.style.backgroundColor = 'darkgreen';
+
+    /** the Style  */
+    p.style.backgroundColor = 'darkgreen';
     newSection.style.minHeight = '30vh';
     newSection.style.marginBottom = '20px';
-    newSection.style.padding = '20px';
+    p.style.padding = '20px';
+    pre.style.padding = '20px';
+    pre.style.minHeight ='50px';
+    pre.style.backgroundColor = 'lightgreen';
+
+
 }
-
-// for(let i=0;i< contentObj.length;i++){ 
-//     let attr = document.getElementsByTagName('section')
-//     if(attr === section.id){
-//         attr.setAttribute('id', contentKeys[key])
-
-//     }
-// }
+'----'
 
 
 
-// const getAllId = document.querySelectorAll('*[id]')
-// console.log(getAllId);
 // '____'
 
 
