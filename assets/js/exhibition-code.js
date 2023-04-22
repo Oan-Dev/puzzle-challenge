@@ -1,7 +1,7 @@
 
 /** Exhibition of  coding */
 
-const ExhibitingOfCoding = {
+const exhibitingOfCoding = {
 // Section id 1
  'retrievingData' :                 'document.getElementById("data-localisation-id").innerHTML.toUpperCase()',
 
@@ -79,7 +79,7 @@ const ExhibitingOfCoding = {
 
 '____'
 
-const codeContent = Object.values(ExhibitingOfCoding);
+const codeContent = Object.values(exhibitingOfCoding);
 
 // console.log(codeContent);
 
@@ -87,10 +87,12 @@ const codeContent = Object.values(ExhibitingOfCoding);
 // Putting the values on the code tag
 
 
-for(let i = 0; i < codeContent; i++) {
+for(let i = 0; i < codeContent.length; i++) {
 
-    const preTag = document.getElementsByTagName('pre')
-    const codeTag = document.getElementsByTagName('code')
+const preTag = document.getElementsByTagName('pre')
+// console.log(preTag);
+const codeTag = document.getElementsByTagName('code')
+// console.log(codeTag);
     codeTag.innerHTML = (codeContent[i]);
 }
 
