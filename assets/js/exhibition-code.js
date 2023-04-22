@@ -76,20 +76,6 @@ const ExhibitingOfCoding = {
 
 // Creating an array from all code for exhibiting
 
-// const exhibitedCodeArray = [
-//         retrievingData,
-//         deepDataCopy,
-//         mappingAndFiltering, 
-//         numberConvertedInString,
-//         comparatingDataWithNumberArray,
-//         alphabetArrayAndComparaingWithStringArray,
-//         splitingForRunningModulo,
-//         applyingModuloForNumberNotUnity,
-//         scalableArray,
-//         reassemblyingArrays,
-//         newString,
-//         websiteCompleted
-// ]
 
 '____'
 
@@ -100,14 +86,15 @@ const codeContent = Object.values(ExhibitingOfCoding);
 
 // Putting the values on the code tag
 
+
 for(let i = 0; i < codeContent; i++) {
-    let sectionTag = document.querySelectorAll('section')
-    let codeTag = document.getElementsByTagName('code');
 
-    console.log(codeTag);
-
-    if(sectionTag.hasAttribute('id')) {
-        codeTag.innerHTML = (codeContent[i]);
-    }
-
+    const preTag = document.getElementsByTagName('pre')
+    const codeTag = document.getElementsByTagName('code')
+    codeTag.innerHTML = (codeContent[i]);
 }
+
+
+'----'
+
+
