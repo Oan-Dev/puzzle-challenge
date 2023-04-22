@@ -95,66 +95,19 @@ const ExhibitingOfCoding = {
 
 const codeContent = Object.values(ExhibitingOfCoding);
 
-console.log(codeContent);
+// console.log(codeContent);
 
 
-// GETTING EACH ID FROM EACH SECTION
+// Putting the values on the code tag
 
+for(let i = 0; i < codeContent; i++) {
+    let sectionTag = document.querySelectorAll('section')
+    let codeTag = document.getElementsByTagName('code');
 
-// const sectionTag = document.getElementsByTagName('section');
+    console.log(codeTag);
 
-// const idSectionTag = sectionTag.forEach(element => { 
+    if(!!sectionTag && sectionTag.hasAttribute('id')) {
+        codeTag.innerHTML = (codeContent[i]);
+    }
 
-//         const elementID = element.id ;
-//         return elementID
-    
-// });
-
-// INSERT DYNAMICALLY ALL THE CODE IN CodeTag
-
-
-// for(let i =0; i < exhibitedCodeArray.length; i++) {
-//         // let section = document.querySelectorAll('section')
-
-//         let preCode = document.getElementsByTagName('code');
-//         // if()
-//         preCode.innerHTML(exhibitedCodeArray[i])
-// }
-
-'_____'
-
-// function filterSection() {
-//     var elements = document.getElementsByTagName('section');
-
-//     for (var i = 0; i < elements.length; i++) {
-
-//         const el = elements[i].id;
-
-//         console.log(el); 
-//         //  get div id of divs with data-title !=(not equal) filterItem
-//         // make display:none of matching divs
-//     }
-// }
-
-// filterSection()
-
-
-'_____'
-
-// function filterSection() {
-//     var elements = document.getElementsByTagName('section');
-
-//     for (let i = 0; i < elements.length; i++) {
-
-//         let el = elements[i].id;
-//           el.map(function(){
-//             return this.id;
-//         }).get()
-//         // console.log(el); 
-
-// }
-// }
-
-// filterSection()
-
-
+}
