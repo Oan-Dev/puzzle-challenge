@@ -124,7 +124,7 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
 }
 '----'
 
-
+getProcessId.removeChild(getProcessId.getElementsByTagName('section')[0])
 
 // '____'
 

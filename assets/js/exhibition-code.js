@@ -135,14 +135,31 @@ const objValue = Object.entries(exhibitingOfCoding).map(([key, value]) => ` ${va
 const sections = document.querySelectorAll('section');
 const preTags = document.querySelectorAll('pre');
 const codeTags = document.querySelectorAll('code');
+
+// const sectionIdTags = 
+// sections.filter((sections) => sections.length > 1);
+// console.log(sectionIdTags);
+
 console.log(sections);
-console.log(preTags);
-console.log(codeTags);
+console.log(typeof(sections));
+// console.log(preTags);
+// console.log(codeTags);
+
+
 
 // for( const section of sections) {
 //     let sectionTag = document.getElementsByTagName(section);
-//     let sectionId = document.getElementById('*[id]')
-//     console.log(sectionTag);
-//     console.log(sectionId);
+
+//     // if(!!section.hasAttribute) {
+
+//     //     let sectionId = document.getElementById('*[id]')
+//     //     console.log(sectionId);
+//     // }
+
+    
+
+
+
+//     // console.log(sectionTag);
     
 // }
