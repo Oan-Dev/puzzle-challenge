@@ -79,55 +79,20 @@ const exhibitingOfCoding = {
 
 '____'
 
-// const codeContent = Object.values(exhibitingOfCoding);
-
-
-// console.log(codeContent);
-
-
-// Putting the values on the code tag
-
-
-// for(let i = 0; i < codeContent.length; i++) {
-
-// const preTag = document.getElementsByTagName('pre')
-// // console.log(preTag);
-// const codeTag = document.getElementsByTagName('code')
-// // console.log(codeTag);
-//     codeTag.innerHTML = (codeContent[i]);
-// }
-
-
-'----'
-
-// for(const [key, value] of Object.entries(exhibitingOfCoding)) {
-//     console.log(key);
-//     console.log(value);
-// }
-'-----'
 
 const objK = Object.entries(exhibitingOfCoding).map(([key]) => `${key}`)
-const objValue = Object.entries(exhibitingOfCoding).map(([key, value]) => ` ${value}`)
+// const objValue = Object.entries(exhibitingOfCoding).map(([key, value]) => ` ${value}`)
+
+const objValue = Object.values(exhibitingOfCoding);
+// console.log(objValue);
+
 
 // console.log(objK);
 // console.log(objValue);
 
-// for(let i = 0; i < objValue.length; i++) {
-//     let codeTag =  document.getElementsByTagName('code')
-    
-// } 
 
 '----'
 // for(const [key, value] of Object.entries(exhibitingOfCoding)) {
-//     let codeContentKey = key;
-//     let codeContentobj = value;
-//     let pre = document.getElementsByTagName('pre');
-//     let codeTag = document.getElementsByTagName('code')
-//     codeTag.innerHTML = (codeContentobj);
-//     pre.setAttribute('id', (codeContentKey))
-
-
-    
 // }
 
 '___________'
@@ -136,9 +101,6 @@ const sections = document.querySelectorAll('section');
 const preTags = document.querySelectorAll('pre');
 const codeTags = document.querySelectorAll('code');
 
-// const sectionIdTags = 
-// sections.filter((sections) => sections.length > 1);
-// console.log(sectionIdTags);
 
 console.log(sections);
 console.log(typeof(sections));
@@ -146,20 +108,3 @@ console.log(typeof(sections));
 // console.log(codeTags);
 
 
-
-// for( const section of sections) {
-//     let sectionTag = document.getElementsByTagName(section);
-
-//     // if(!!section.hasAttribute) {
-
-//     //     let sectionId = document.getElementById('*[id]')
-//     //     console.log(sectionId);
-//     // }
-
-    
-
-
-
-//     // console.log(sectionTag);
-    
-// }

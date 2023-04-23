@@ -49,27 +49,14 @@ const processId = processClass.id
 const getProcessId = document.querySelector('#story')
 
 const getIdExhib = document.querySelector('#exhibition')
-// for(let i=0;i< contentObj.length;i++){ 
-//     let attr = document.getElementsByTagName('section')
-//     if(attr === section.id){
-//         attr.setAttribute('id', contentKeys[key])
 
-//     }
-// }
-
-
-
-// const getAllId = document.querySelectorAll('*[id]')
-// console.log(getAllId);
-// console.log(getProcessId);
-// console.log(getIdExhib);
 
 
 '_____';
 
 const contentKeys = Object.keys(contentObj);
 
-// console.log(contentKeys);
+console.log(contentKeys);
 
 const objContent = Object.values(contentObj);
 
@@ -126,19 +113,13 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
 
 getProcessId.removeChild(getProcessId.getElementsByTagName('section')[0])
 
-// '____'
+'___'
 
+const newSections = document.querySelectorAll('section');
 
-// section.style.backgroundColor = 'darkgreen';
-// section.style.minHeight = '30vh';
-// section.style.marginBottom = '20px';
-// p.style.backgroundColor = 'darkblue';
-// p.style.minHeight = '30vh';
-// p.style.padding = '20px';
-// p.style.marginBottom = '20px';
-
-// h2.style.backgroundColor = 'darkorange';
-// h2.style.minHeight = '5vh';
-
-// pre.style.backgroundColor = 'darkgray';
-// pre.style.minHeight = '50vh';
+// for(const newSection of newSections ) {
+//     newSection.setAttribute('name', (contentKeys[i]))
+// }
+for(const [key, value] of Object.entries(newSections) ) {
+    newSection.setAttribute('name', (key))
+}
