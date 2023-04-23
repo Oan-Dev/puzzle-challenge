@@ -133,7 +133,11 @@ const objValue = Object.entries(exhibitingOfCoding).map(([key, value]) => ` ${va
 '___________'
 
 const sections = document.querySelectorAll('section');
+const preTags = document.querySelectorAll('pre');
+const codeTags = document.querySelectorAll('code');
 console.log(sections);
+console.log(preTags);
+console.log(codeTags);
 
 // for( const section of sections) {
 //     let sectionTag = document.getElementsByTagName(section);
