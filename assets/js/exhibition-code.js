@@ -108,3 +108,17 @@ console.log(typeof(sections));
 // console.log(codeTags);
 
 
+'_________'
+
+// for(let i=0;i< objValue.length;i++){  
+
+//     var nodes = sections.children[1].getElementsByTagName("section");
+//     nodes = Array.prototype.slice.call(nodes);
+//     nodes = nodes.filter(function(v, i){
+//         return v.parentElement === sections.children[1][0]; 
+//     });
+
+//     nodes.innerHTML = (objValue[i]);
+
+//  }
+

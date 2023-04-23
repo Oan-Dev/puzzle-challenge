@@ -120,6 +120,6 @@ const newSections = document.querySelectorAll('section');
 // for(const newSection of newSections ) {
 //     newSection.setAttribute('name', (contentKeys[i]))
 // }
-for(const [key, value] of Object.entries(newSections) ) {
-    newSection.setAttribute('name', (key))
-}
+// for(const [key, value] of Object.entries(newSections) ) {
+//     newSection.setAttribute('name', (key))
+// }
