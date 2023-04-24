@@ -100,25 +100,50 @@ const objValue = Object.values(exhibitingOfCoding);
 const sections = document.querySelectorAll('section');
 const preTags = document.querySelectorAll('pre');
 const codeTags = document.querySelectorAll('code');
+const preTag = document.querySelector('pre');
+const codeTag = document.querySelector('code');
 
 
-console.log(sections);
-console.log(typeof(sections));
-// console.log(preTags);
-// console.log(codeTags);
+// console.log(sections);
+// console.log(typeof(sections));
+console.log(preTags);
+console.log(codeTags);
+
+'---------'
+/**ADDING CLASS TO BOTH ELEMENTS */
+
+preTag.classList.add('pre')
+codeTag.classList.add('code')
+
+'---------'
+/** RETRIEVING 'CODE' AND 'PRE' CLASS */
+const preClass = document.getElementsByClassName('pre');
+const codeClass = document.getElementsByClassName('code');
+
+'--------'
+/** RETRIEVING OBJECT KEY AND CONTENT */
+
+const objKeys = Object.keys(exhibitingOfCoding);
+const objCodeContent = Object.values(exhibitingOfCoding);
 
 
 '_________'
 
-// for(let i=0;i< objValue.length;i++){  
+// for(let i =0; i < codeTag.length; i++) {
+//     codeTag.innerHTML = (objCodeContent[i]);
+    
+// }
 
-//     var nodes = sections.children[1].getElementsByTagName("section");
-//     nodes = Array.prototype.slice.call(nodes);
-//     nodes = nodes.filter(function(v, i){
-//         return v.parentElement === sections.children[1][0]; 
-//     });
+function update(){
+    let arr = objValue;
+    let codeClass = document.querySelectorAll('[class^=code]')
+    codeClass.forEach((e,i)=>{
+      e.innerHTML = arr[i]
+    })
+  
+  }
 
-//     nodes.innerHTML = (objValue[i]);
+  const AddContent = update();
 
-//  }
+  console.log(update);
 
