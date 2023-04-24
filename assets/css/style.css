@@ -128,7 +128,18 @@ h2 span {
 
 .pre {
     padding: 20px;
+    background-color: var(--third-bg);
+    border-radius: 10px;
 }
+
+section {
+    min-height: 10vh;
+}
+
+#story section:first-child {
+    min-height: 5vh;
+}
+
 
 @media screen and (max-width: 500px) {
     .code {

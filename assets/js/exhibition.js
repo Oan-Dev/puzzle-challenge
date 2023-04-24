@@ -92,12 +92,12 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
      p.innerHTML = (objContent[i]);
 
     /** the Style  */
-    p.style.backgroundColor = 'darkgreen';
-    newSection.style.minHeight = '30vh';
     newSection.style.marginBottom = '20px';
     p.style.padding = '20px';
-    // pre.style.padding = '20px';
     pre.style.minHeight ='50px';
+    
+    // p.style.backgroundColor = 'darkgreen';
+    // newSection.style.minHeight = '30vh';
     // pre.style.backgroundColor = 'lightgreen';
 
 
