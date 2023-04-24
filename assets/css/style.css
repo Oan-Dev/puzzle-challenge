@@ -126,6 +126,19 @@ h2 span {
     /* background-color: darkgreen; */
 }
 
+.pre {
+    padding: 20px;
+}
 
-
+@media screen and (max-width: 500px) {
+    .code {
+        /* font-size: .5rem; */
+        box-sizing: border-box;
+        word-wrap: break-word;
+        padding-inline: 20px;
+    }
+    .pre {
+        padding: 20px 0;
+    }
+}
 

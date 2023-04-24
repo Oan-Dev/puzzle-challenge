@@ -96,9 +96,9 @@ for(let i=0;i< objContent.length;i++){   // CREATE NEW ELEMENT ACCORDING TO THE 
     newSection.style.minHeight = '30vh';
     newSection.style.marginBottom = '20px';
     p.style.padding = '20px';
-    pre.style.padding = '20px';
+    // pre.style.padding = '20px';
     pre.style.minHeight ='50px';
-    pre.style.backgroundColor = 'lightgreen';
+    // pre.style.backgroundColor = 'lightgreen';
 
 
 }

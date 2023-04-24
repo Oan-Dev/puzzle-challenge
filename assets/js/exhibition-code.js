@@ -3,74 +3,113 @@
 
 const exhibitingOfCoding = {
 // Section id 1
- 'retrievingData' :                 'document.getElementById("data-localisation-id").innerHTML.toUpperCase()',
+ 'retrievingData' : 
+ `document
+ .getElementById("data-
+ localisation-id").
+ innerHTML.toUpperCase()`,
 
 // Section id 2
- 'deepDataCopy' :                   '[... data]',
+ 'deepDataCopy' :  '[... data]',
 
 // Section id 3
- 'mappingAndFiltering' :            'data.map(element => Number(element)).filter(Number)',
+ 'mappingAndFiltering' :
+`data.map(element => 
+Number(element))
+.filter(Number)`,
 
 // Section id 4
- 'numberConvertedInString' :            `const numberArray = [];
+'numberConvertedInString' :            
+`const numberArray = [];
 
-                                        for (i = 0; i < 10; i++) {
-                                            numberArray.push(i)
-                                        }
+for (i = 0; i < 10; i++) 
+{ numberArray.push(i) }
 
-                                        for (i = 0; i < 10; i++) {
-                                            const numStr = numberArray[i].toString();
-                                            numberArray.push(numStr)
-                                        }`,
+for (i = 0; i < 10; i++) 
+{const numStr = 
+numberArray[i]toString();
+numberArray.push(numStr)}`,
 
 // Section Id 5
- 'comparatingDataWithNumberArray' :     'const stringArray = data.filter(x => !numberArray.includes(x)).sort()',
+ 'comparatingDataWithNumberArray' :     
+`const stringArray = data
+ .filter(x =>!numberArray
+    .includes(x)).sort()`,
 
 // section Id 6
  'alphabetArrayAndComparaingWithStringArray' : 
-                                        `var alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split('');
-                                        var alphabetPosition = () => stringArray.map(x => alphabet.indexOf(x) + 1);
-                                        const alphaPosition = alphabetPosition(stringArray);`,
+  `var alphabet = 
+"abcdefghijklm
+nopqrstuvwxyz".
+toUpperCase().split('');
+
+var alphabetPosition = 
+() => stringArray
+.map(x => alphabet
+  .indexOf(x) + 1);
+
+const alphaPosition = 
+alphabetPosition(
+    stringArray);`,
 
 // Section id 7
 
- 'splitingForRunningModulo' :           `alphaPosition.filter((element) => { return element > 9; });
+ 'splitingForRunningModulo' :  
+ `alphaPosition
+ .filter((element) => 
+ { return element>9;});
 
-                                         alphaPosition.filter((element) => { return element < 10; });`,
+  alphaPosition
+  .filter((element) => 
+   return element<10;});`,
 
 // Section Id 8
- 'applyingModuloForNumberNotUnity' :    'setModulable.map( element => element % 10 )',
+ 'applyingModuloForNumberNotUnity' :    
+` setModulable
+.map( element => 
+    element % 10 )`,
 
- 'scalableArray' :                      `existingUnitiesArray.filter(element => {
-                                            if(element > 6) {
-                                                return element;
-                                            }
-                                            
-                                        })
-                                        .map(element => element += 3)
-                                        .map(element => element %= 10);`,
+ 'scalableArray' : 
+`existingUnitiesArray
+.filter(element =>
+{
+if(element > 6) 
+{
+ return element;
+}}
+.map(element => 
+    element += 3)
+.map(element => 
+    element %= 10);`,
 
 // section Id 9
 
- 'reassemblyingArrays' :                `existingUnities.filter(
-                                        element => {
-                                            if(element < 7 ) {
-                                                return element;
-                                            }
-                                            
-                                    })
-
-                                    .concat(secondaryArrays, firstArray);`,
+ 'reassemblyingArrays' : 
+ 
+`existingUnities
+.filter( element => 
+{if(element < 7)
+{return element;}})
+.concat(secondaryArrays, 
+    firstArray);`,
 
 // Section id 10
 
- 'newString' :                      `const dataSize = data.length
+ 'newString' :  
+ `const dataSize = 
+ data.length
 
-                                    const promo = newArray.join('').concat(dataSize);`,
+  const promo = 
+  newArray.join('')
+  .concat(dataSize);`,
 
 // Section id 11
 
- 'websiteCompleted' :               `const promoCode = 'https://formation.yoandev.co/?coupon=' + promo;`
+ 'websiteCompleted' :    
+ `const promoCode =
+ 'https://formation
+ .yoandev.co/?coupon=' 
+ + promo;`
 }
 
 
@@ -132,6 +171,10 @@ function update(){
 
   const AddContent = update();
 
-
+'_________'
 
 preTag.remove(preTag.getElementsByTagName('pre')[0])
+
+'________'
+
+
