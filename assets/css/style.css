@@ -143,13 +143,13 @@ section {
 
 @media screen and (max-width: 500px) {
     .code {
-        /* font-size: .5rem; */
+        font-size: .5rem;
         box-sizing: border-box;
         word-wrap: break-word;
         padding-inline: 20px;
     }
     .pre {
-        padding: 20px 0;
+        padding: 20px 5px;
     }
 }
 
