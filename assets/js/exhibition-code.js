@@ -91,9 +91,6 @@ const objValue = Object.values(exhibitingOfCoding);
 // console.log(objValue);
 
 
-'----'
-// for(const [key, value] of Object.entries(exhibitingOfCoding)) {
-// }
 
 '___________'
 
@@ -106,26 +103,21 @@ const codeTag = document.querySelector('code');
 
 // console.log(sections);
 // console.log(typeof(sections));
-console.log(preTags);
-console.log(codeTags);
+// console.log(preTags);
+// console.log(codeTags);
 
 '---------'
 /**ADDING CLASS TO BOTH ELEMENTS */
 
-// preTag.classList.add('pre')
-// codeTag.classList.add('code')
-
-
-// var prTags = document.querySelectorAll('pre');
-// for (var i = 0; i < prTags.length; i++) {
-//     preTag[i].classList.add('pre');
-// }
-// var codTags = document.querySelectorAll('code');
-// for (var i = 0; i < codTags.length; i++) {
-//     codeTag[i].classList.add('code');
-// }
 document.querySelectorAll('code').forEach(el=>el.classList.add('code'));
 document.querySelectorAll('pre').forEach(el=>el.classList.add('pre'));
+
+'---'
+/** FOR HAVING THE FIRST ELEMENT WITH THE 'pre' CLASS */
+const firstClassPre = document.getElementsByClassName('pre')[0];
+console.log(firstClassPre);
+const removingFirstPre = firstClassPre.remove()
+
 
 '---------'
 /** RETRIEVING 'CODE' AND 'PRE' CLASS */
@@ -141,13 +133,6 @@ const objCodeContent = Object.values(exhibitingOfCoding);
 
 '_________'
 
-// for(let i =0; i < codeTag.length; i++) {
-//     codeTag.innerHTML = (objCodeContent[i]);
-    
-// }
-
-
-
 function update(){
     let arr = objValue;
     let codeClass = document.querySelectorAll('[class^=code]')
@@ -159,5 +144,7 @@ function update(){
 
   const AddContent = update();
 
-  console.log(update);
+//   console.log(update);
 
+
+preTag.removeChild(preTag.getElementsByTagName('pre')[0])

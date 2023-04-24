@@ -56,7 +56,7 @@ const getIdExhib = document.querySelector('#exhibition')
 
 const contentKeys = Object.keys(contentObj);
 
-console.log(contentKeys);
+// console.log(contentKeys);
 
 const objContent = Object.values(contentObj);
 
@@ -117,9 +117,7 @@ getProcessId.removeChild(getProcessId.getElementsByTagName('section')[0])
 
 const newSections = document.querySelectorAll('section');
 
-// for(const newSection of newSections ) {
-//     newSection.setAttribute('name', (contentKeys[i]))
-// }
-// for(const [key, value] of Object.entries(newSections) ) {
-//     newSection.setAttribute('name', (key))
-// }
+'___________'
+
+
+
