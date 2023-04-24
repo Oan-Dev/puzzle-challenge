@@ -28,11 +28,8 @@ const contentObj = {
     'finalisationProcess' :                  `Pour finaliser l'objectif, J'ai associé la nouvelle chaine de caractère avec le lien par une concaténation`,
 
 }
-// console.log(contentObj);
 
-
-
-
+'________________'
 
 /**
 INSERT ALL PROCESS TO THE DOM 
@@ -56,21 +53,17 @@ const getIdExhib = document.querySelector('#exhibition')
 
 const contentKeys = Object.keys(contentObj);
 
-// console.log(contentKeys);
 
 const objContent = Object.values(contentObj);
 
-// console.log(objContent);
 
 '_____';
 
 '----'
 
 const newSection = document.createElement('section');
-// let newSection = document.createElement('section');
 const addSectionAtParent = getProcessId.appendChild(newSection);
 
-// console.log(addSectionAtParent);
 
 '_____';
 

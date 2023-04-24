@@ -84,13 +84,6 @@ const objK = Object.entries(exhibitingOfCoding).map(([key]) => `${key}`)
 // const objValue = Object.entries(exhibitingOfCoding).map(([key, value]) => ` ${value}`)
 
 const objValue = Object.values(exhibitingOfCoding);
-// console.log(objValue);
-
-
-// console.log(objK);
-// console.log(objValue);
-
-
 
 '___________'
 
@@ -101,10 +94,6 @@ const preTag = document.querySelector('pre');
 const codeTag = document.querySelector('code');
 
 
-// console.log(sections);
-// console.log(typeof(sections));
-// console.log(preTags);
-// console.log(codeTags);
 
 '---------'
 /**ADDING CLASS TO BOTH ELEMENTS */
@@ -115,7 +104,6 @@ document.querySelectorAll('pre').forEach(el=>el.classList.add('pre'));
 '---'
 /** FOR HAVING THE FIRST ELEMENT WITH THE 'pre' CLASS */
 const firstClassPre = document.getElementsByClassName('pre')[0];
-console.log(firstClassPre);
 const removingFirstPre = firstClassPre.remove()
 
 
@@ -144,7 +132,6 @@ function update(){
 
   const AddContent = update();
 
-//   console.log(update);
 
 
-preTag.removeChild(preTag.getElementsByTagName('pre')[0])
+preTag.remove(preTag.getElementsByTagName('pre')[0])
