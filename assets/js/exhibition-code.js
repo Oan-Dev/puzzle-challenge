@@ -112,8 +112,20 @@ console.log(codeTags);
 '---------'
 /**ADDING CLASS TO BOTH ELEMENTS */
 
-preTag.classList.add('pre')
-codeTag.classList.add('code')
+// preTag.classList.add('pre')
+// codeTag.classList.add('code')
+
+
+// var prTags = document.querySelectorAll('pre');
+// for (var i = 0; i < prTags.length; i++) {
+//     preTag[i].classList.add('pre');
+// }
+// var codTags = document.querySelectorAll('code');
+// for (var i = 0; i < codTags.length; i++) {
+//     codeTag[i].classList.add('code');
+// }
+document.querySelectorAll('code').forEach(el=>el.classList.add('code'));
+document.querySelectorAll('pre').forEach(el=>el.classList.add('pre'));
 
 '---------'
 /** RETRIEVING 'CODE' AND 'PRE' CLASS */
@@ -133,6 +145,8 @@ const objCodeContent = Object.values(exhibitingOfCoding);
 //     codeTag.innerHTML = (objCodeContent[i]);
     
 // }
+
+
 
 function update(){
     let arr = objValue;
