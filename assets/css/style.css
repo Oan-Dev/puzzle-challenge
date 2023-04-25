@@ -57,18 +57,11 @@ header {
     text-transform: uppercase;
 }
 
-/** Attempting BG Image */
-/* .logo {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    background-image: url(../img/Olivier\ ALAIN\ _Dev\ .png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
-} */
-/** End Attempting */
+.logo .img img {
+    border-color: var(--third-bg);
+    width: 100px;
+}
 
 .logo, nav {
     padding: 20px;
@@ -177,6 +170,11 @@ section {
     }
     #discount {
         font-size: .8rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
