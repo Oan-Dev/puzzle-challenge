@@ -18,4 +18,4 @@ For running this project, it had to retrieve the statement and the result had to
 
 ## Find a bug ?
 
-- if you found an issue or would like to submit an improvement to this project, please submit an issue using the issue tab above. if you would like to submit a PR with a fix, reference the issue you created!
+   if you found an issue or would like to submit an improvement to this project, please submit an issue using the issue tab above. if you would like to submit a PR with a fix, reference the issue you created!
