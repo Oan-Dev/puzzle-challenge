@@ -167,6 +167,8 @@ Part 6
 
 const promoCode = 'https://formation.yoandev.co/?coupon=' + promo;
 
+const displayingPromo = 'Coupon=' + promo;
+
 
 '_____';
 
@@ -179,7 +181,7 @@ const selector = document.querySelector('#discount');
 
 const newLink = document.createElement('a')
 
-const promoText = newLink.textContent = promoCode;
+const promoText = newLink.textContent = displayingPromo;
 
 
 discount.append(newLink);
